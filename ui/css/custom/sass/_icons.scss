@@ -1,0 +1,29 @@
+.greyIcon {
+  color: $appDkGrey;
+   &:hover {
+     color: $appLtBlue;
+   }
+}
+.appBlueIcon {
+  color: $appBlue;
+   &:hover {
+     color: $appDkBlue;
+   }
+}
+
+
+// .custom-fa-o {
+//   &:hover {
+//     .custom-fa-o-rollover {display:none;}
+//     .custom-fa-rollover {display:inline-block;}
+//   }
+// }
+.custom-fa-o:hover {}
+.custom-fa-rollover {display:none;}
+.custom-fa-o:hover .custom-fa-o-rollover {display:none;}
+.custom-fa-o:hover .custom-fa-rollover {display:inline-block;}
+i[ui-sref] {cursor: pointer; transition: 0.5s;}
+i[ui-sref]:hover {transform:scale(1.2)}
+.fa-asterisk {font-size: 7px;vertical-align: top;}
+.fa-times-circle-o, .fa-times-circle {font-size: 20px;color: $appBlue;}
+.impersonateIcon i {font-size: 18px;}

@@ -1,0 +1,18 @@
+<div login-header></div>
+<div id="invitedAuthSignIn" class="view custom-signUpView" ng-init="iaSignin()">
+    <div class="custom-signInContainer">
+      <div class="custom-signIn" >
+        <div class="well">You have been invited to approve a project. Please sign in with your username and password.</div>
+        <form name="invitedAuthSignInForm" novalidate>
+          <div class="form-group">
+            <input type="text" name="username" class="form-control" placeholder="Username" ng-model="invitedAuth.username">
+          </div>
+          <div class="form-group">
+            <input type="password" name="password" class="form-control" ng-class="{'custom-errOutline' : invitedAuthSignInForm.$submitted && invitedAuthSignInForm.password.$invalid}" placeholder="Password" ng-model="invitedAuth.password" required>
+            <span class="custom-error" ng-show="invitedAuthSignInForm.$submitted && invitedAuthSignInForm.password.$invalid">Please enter a password</span>
+          </div>
+          <div class="custom-btnWrapper custom-thankYouBtn"><button class="btn btn-primary custom-wideBtn" ng-click="invitedAuthSignIn(invitedAuth)">Sign In</button></div>
+        </form>
+      </div>
+    </div>
+</div>

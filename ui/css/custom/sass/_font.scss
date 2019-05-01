@@ -1,0 +1,49 @@
+/****************************** Headers ************************/
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {color:#2e7492; padding:0;}
+
+@media screen and (max-width:768px) {
+  h1 {font-size: 22px;}
+  h2 {font-size: 16px}
+  h3 {font-size: 14px}
+  h4 {font-size: 12px}
+  h5 {font-size: 11px}
+  h6 {font-size: 10px}
+}
+
+.font-xxs {font-size: 11px;}
+.font-xs {font-size: 12px;}
+.font-s {font-size: 14px;}
+.font-md {font-size: 18px;}
+.font-lg {font-size: 20px;}
+.font-xl {font-size: 22px;}
+.font-xml {font-size: 24px;}
+.font-xxl {font-size: 26px;}
+.font-xxxl {font-size: 30px;}
+
+.custom-text-default, a.custom-text-default {color: $appGrey;}
+.custom-text-white, a.custom-text-white {color: $appWhite;}
+.custom-text-primary, a.custom-text-primary {color: $appBlue;}
+.custom-text-info, a.custom-text-info {color: $appMdBlue;}
+.custom-text-warning, a.custom-text-warning {color: $appMedOrange;}
+.custom-text-danger, a.custom-text-danger  {color: $appDangerRed;}
+.custom-text-success, a.custom-text-success {color: $appGreen;}
+.custom-text-dark, a.custom-text-dark {color: $appDkGrey;}
+.custom-text-xdark, a.custom-text-xdark {color: $appExDkGrey;}
+
+.custom-text-default:hover, a.custom-text-default:hover {color: darken($appGrey, 10%);}
+.custom-text-primary:hover, a.custom-text-primary:hover {color: darken($appBlue, 10%);}
+.custom-text-info:hover, a.custom-text-info:hover {color: darken($appMdBlue, 10%);}
+.custom-text-warning:hover, a.custom-text-warning:hover {color: $appHoverOrange;}
+.custom-text-danger:hover, a.custom-text-danger:hover  {color: darken($appDangerRed, 10%);}
+.custom-text-success:hover, a.custom-text-success:hover {color: darken($appGreen, 10%);}
+
+.custom-primary-disabled {color: rgba( $appBlue, .7 )}
+
+.custom-silver {color: $appSilver;}
+.custom-gold {color: $appGold;}
+.custom-platinum {color: $appPlatinum;}
+
+// Alignment //
+.custom-text-center {text-align: center;}
+.custom-text-right {text-align: right;}
+.custom-text-shadow {}

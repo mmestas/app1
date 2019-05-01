@@ -1,0 +1,42 @@
+<div login-header class="custom-min480"></div>
+<div login-responsive-header class="custom-max480"></div>
+<div id="signUpStep4" class="view custom-signUpView" ng-init="planReferralPurchase()">
+  <div class="custom-signUpStatusBar custom-min480" layout-align="center center">
+    <h1>Purchase Your CompanyNme Subscription</h1>
+  </div>
+  <md-toolbar class="md-hue-custom custom-min480">
+    <div class="md-toolbar-tools" layout="row" layout-align="center center">
+      <div layout="column" layout-align="center center">
+        <h2 class="md-flex">Start project engagements with freelancers and more</h2>
+      </div>
+    </div>
+  </md-toolbar>
+
+  <div class="custom-mainBodyWidth custom-StepContainer md-whiteframe-3dp">
+    <div class="custom-Step">
+      <!-- ///////////////////////////////// SELECT license //////////////////////////////////// -->
+      <div class="form-group custom-info">
+        <h3 class="text-center">{{appInfo.item.name}} Subscription</h3>
+      </div>
+      <div class="custom-price">Total Amount Due: {{appInfo.item.UnitPrice | currency}}</div>
+      <!-- ///////////////////////////////// ECOMMERCE //////////////////////////////////// -->
+      <div class="custom-ecommerceWrapper" ng-show="appInfo.item && (appInfo.item.UnitPrice > 0)">
+        <form id="js-ecommercePayments" name="ecommercePayments"></form>
+      </div>
+      <!-- ///////////////////////////////// ADDRESS //////////////////////////////////// -->
+      <div class="custom-price">Total Amount Due: {{appInfo.item.UnitPrice | currency}}</div>
+      <div class="custom-paymentAgreement abPayDetailECheckOnline" style="display:none;">  {{PaymentAcknowledgementContent}} </div>
+      <div class="custom-SubmitError col col-md-12">
+        <div class="row errorMsg custom-error custom-errorMsg" ng-show="ccError"><span class="fieldError">{{errorMsg}}</span></div>
+      </div>
+      <div class="row custom-btnWrapper">
+        <div class="col col-md-6 custom-backBtn">
+          <!-- <button class="btn btn-default btn-outline" ng-click="goBackToStep3()">Back</button> -->
+        </div>
+        <div class="col col-md-6 custom-nextBtn text-right">
+          <button class="btn btn-primary" type="submit" ng-click="submitPayment(appInfo)">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

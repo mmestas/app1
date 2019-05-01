@@ -1,0 +1,54 @@
+<div class="row custom-row">
+  <div ng-show="bench.length < 1">You have no one currently in your Bench.  You can add Consultants under the "Search Results" tab underneath their profile picture.</div>
+  <div class="col col-md-12 custom-expertsList" ng-repeat="member in bench" star-rating-after-repeat >
+    <div class="col col-md-3 custom-expertPicLinks">
+      <div class="custom-expertPic"><img ng-src="{{envURL+member.imageFilename}}"></div>
+      <div class="custom-addToBenchBtn">
+        <button class="btn btn-primary btn-outline btn-sm" ng-click="CoNameSetConsultantToShortlist(member)" ng-disabled="member.existsInShortlist" ng-class="{'custom-addedTo': member.existsInShortlist}">
+          <span ng-hide="member.existsInShortlist">Add to Shortlist</span>
+          <span ng-show="member.existsInShortlist">Added to Shortlist</span>
+        </button>
+      </div>
+      <div class="custom-addToBenchBtn">
+        <button class="btn btn-primary btn-sm" ng-click="CoNameRemoveConsultantFromBench(member)">
+          Remove from Bench
+        </button>
+      </div>
+    </div>
+    <div class="col col-md-6 custom-expertInfo">
+      <h4 class="custom-expertName" ng-click="showFullConsultantDetailsModal($event, member)">
+        <div ng-if="!member.profileNamePrivate">{{member.name}}</div>
+        <div ng-if="member.profileNamePrivate">{{member.name | createInitials}}</div>
+        <div><small class="custom-expertCo">{{member.title}}</small></div>
+      </h4>
+      <div class="custom-expertAddress">
+        <div ng-if="member.city || member.state.name"><i class="fa fa-map-marker-alt"></i> <span ng-if="member.city">{{member.city}}</span><span ng-if="member.state.name">, {{member.state.name}}</span> </div>
+        <!-- <div><i class="fa fa-map-marker-alt"></i> {{member.city}}, {{member.state.name}} </div> -->
+        <div>Projects: {{member.numberProjects}} | Certifications: {{member.certifications.length}}</div>
+      </div>
+      <div class="custom-expertDescription"><span ng-bind-html="member.consultantDescription | limitTo : limitDescription150"></span><span ng-show="member.consultantDescription.length > 150">...</span>
+        <!-- <span ng-click="showFullConsultantDetailsModal($event, member)">Read More</span> -->
+      </div>
+      <div class="custom-expertSkills">
+        <div class="label label-default label-outline custom-expertSkillsLabel" ng-repeat="skill in member.skills | limitTo : 3">{{skill.skillName}}</div>
+        <div ng-if="member.skills.length > 3"><a href="#" ng-click="showFullConsultantDetailsModal($event, member)">{{member.skills.length - 3}} More</a></div>
+      </div>
+      <div class="custom-expertDeptLogos">
+        <img class="custom-expertAgencies" ng-repeat="agency in member.agencies | limitTo : 4" ng-src="{{envURL+agency.imageFilename}}">&nbsp;
+        <span ng-if="member.agencies.length > 4"><a href="#">{{member.agencies.length - 4}} More</a></span>
+      </div>
+    </div>
+    <div class="col col-md-3 custom-expertRating">
+      <h4 ng-show="member.freelanceHourlyRate"> {{member.freelanceHourlyRate | currency}} / hr</h4>
+      <div ng-if="member.verification.gpKey === '{2cf9f736-b545-4141-801b-74e6c5bc71c1}'"><i class="fa fa-certificate custom-silver"></i> Silver Verified</div>
+      <div ng-if="member.verification.gpKey === '{40fc325d-35d3-412c-bdb9-704451336652}'"><i class="fa fa-certificate custom-gold"></i> Gold Verified</div>
+      <div ng-if="member.verification.gpKey === '{cd29a394-1b49-4166-924d-16199b9ad6dd}'"><i class="fa fa-certificate custom-platinum"></i> Platinum Verified</div>
+      <div>Member since {{myConvertDate(member.joinDate) | date}} </div>
+      <div>Profile Completion {{member.profileCompletion}}%</div>
+      <div>
+        <button class="btn btn-primary btn-outline btn-sm" ng-click="showSendMsgSLModal($event, member)">Send Message</button>
+        <button class="btn btn-primary btn-sm" ng-click="showEngagementInviteModal($event, member)">Invite to Quote</button>
+      </div>
+    </div>
+  </div>
+</div>

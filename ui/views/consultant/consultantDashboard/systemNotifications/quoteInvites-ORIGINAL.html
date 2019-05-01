@@ -1,0 +1,54 @@
+<div class="custom-systemNotificationsWrapper">
+  <div class=" md-whiteframe-2dp">
+    <div>
+      <div class="panel-heading">
+        <div>RFQ Invites</div>
+        <div class="custom-readNotification">
+          <div class="custom-hideShowMsgs" ng-hide="readMsgsVisible"><span ng-click="loadReadMsgs()"> Show Archived Invites</span> <i class="fa fa-times custom-closePanel custom-ml20" ui-sref="consultant.dashboard"></i></div>
+          <div class="custom-hideShowMsgs" ng-show="readMsgsVisible"><span ng-click="hideReadMsgs()"> Hide Archived Invites</span> <i class="fa fa-times custom-closePanel custom-ml20" ui-sref="consultant.dashboard"></i></div>
+
+        </div>
+      </div>
+      <div class="panel-body">
+        <div>
+          <ul class="collapsible popout" data-collapsible="accordion" >
+            <li ng-repeat="msg in notificationList" ng-init="initializeCollapse()" ng-if="!msg.isDeleted && (msg.notificationType == 2)" ng-hide="msg.markAsRead && !readMsgsVisible">
+                <div class="collapsible-header">
+                  <div>
+                    <i class="fa fa-clock-o" ng-if="msg.notificationType == 2"></i>
+                    <i class="glyphicon glyphicon-comment" ng-if="msg.notificationType == 1"></i>
+                      <div>
+                      <h4>{{msg.title}} <span ng-if="msg.consultantRejected"> - Rejected</span></h4>
+                      <h4><small>{{msg.subTitle | limitTo : 80}}<span ng-show="msg.subTitle.length > 80">...</span></small></h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body">
+                  <div><strong>Subject: {{msg.subject}}</strong></div>
+                  <div>From: {{msg.fromAddress}}</div>
+                  <div>{{msg.notificationDate | dateConverter | date: 'MM-dd-yyyy HH:mm'}}</div>
+
+                  <div ng-if="!msg.consultantRejected">
+                    <div class="custom-msgText" ng-bind-html="msg.message"></div>
+                    <div class="custom-msgText" ng-if="msg.notificationType == 2">
+                      <p>Click <a ng-click="getQuoteInviteDetails(msg)">here</a> to access the details of the project scope and submit your quote.</p></div>
+                  </div>
+                  <div ng-if="msg.consultantRejected">
+                    You have rejected this invite
+                  </div>
+                  <div class="custom-collapsable-footer">
+                    <div ng-hide="msg.markAsRead"><i class="fa fa-envelope custom-msgIcon" ng-click="markAsRead(msg)"></i> Archive </div>
+                    <div ng-show="msg.markAsRead"><i class="fa fa-envelope-open custom-msgIcon" ng-click="markAsUnread(msg)"></i> Unarchive </div>
+                    <div>
+                      <span ng-if="msg.notificationType == 1"><i class="fa fa-reply custom-msgIcon" ng-click="openReplyToMsgModal(msg)"></i> Reply</span>
+                      <span><i class="fa fa-trash custom-msgIcon" ng-click="deleteMsg(msg)"></i> Delete</span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

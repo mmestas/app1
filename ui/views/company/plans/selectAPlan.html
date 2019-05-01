@@ -1,0 +1,114 @@
+<div class="panel panel-default">
+    <div class="custom-businessModelTable">
+      <div class="custom-tableLeft">
+        <div class="divTableBody">
+          <div class="custom-leftTableColumn">
+            <div class="custom-tableTitle">&nbsp;</div>
+            <div class="tablePlansFeatures"><h3>Plans & Features</h3></div>
+            <div class="custom-tableRow">
+              <div>
+                <h4>Active Projects</h4>
+                <div>A project is an active search for a consultant you want to hire.</div>
+              </div>
+            </div>
+            <div class="custom-tableRow">
+              <div>
+                <h4>Expert Matching Engine</h4>
+                <div>Advanced filters enable super-fast drill down capability.</div>
+              </div>
+            </div>
+            <div class="custom-tableRow">
+              <div>
+                <h4>Consultant Quotes & Engagement</h4>
+                <div>Shortlist and request quotes from consultants and choose the one best for your project.</div>
+              </div>
+            </div>
+            <div class="custom-tableRow">
+              <div>
+                <h4>Digital Administration</h4>
+                <div>We handle NDAs, OCIs, invoices, and 1099 tax reporting to save time and cost.</div>
+              </div>
+            </div>
+            <div class="custom-tableRow">
+              <div>
+                <h4>In-App Customer Support</h4>
+                <div>Online help, FAQs, and tutorials are available.</div>
+              </div>
+            </div>
+            <div class="custom-tableRowLast">
+              <div>
+                <h4>On-Demand PMO</h4>
+                <div style="margin-bottom:3px;"><strong>CSR - </strong> Customer Support Representatives assist with training, trouble shooting, and general support.</div>
+                <div><strong>PM - </strong> Project Manager saves you time and manages your business project needs from oversight of project requirements to identifying matching consultants inside or outside of the marketplace.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-tableRight">
+        <div class="divTableBody">
+          <div class="divTableColumn" ng-class="{'custom-selectedPlan' : planInformation.SupportHrs == 2}" data-ng-click="planInformation.SupportHrs == 2 || planSelected(0)" ng-if="planInformation.SupportHrs <= 2" ng-disabled="planInformation.SupportHrs == 2">
+            <fieldset>
+              <legend align="center"><span ng-hide="planInformation.SupportHrs == 2">&nbsp;</span><span style="color:#fff;" ng-show="planInformation.SupportHrs == 2">Current Plan</span></legend>
+              <div><div class="custom-tableTitle">Basic</div></div>
+              <div><div class="custom-tableAmmt bg-info"><div class="custom-tableAmmtInner">Free</div></div></div>
+              <div class="custom-tableRow"><div class="custom-tableProjectLimit">Up to 2 per/mo.</div></div>
+              <div class="custom-tableRow"><div class="custom-tableLimit">Limited</div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div><div class="custom-tableManager bg-info">Up to 2 hrs per/mo.</div></div>
+              <div class="custom-tableRow"><div>CSR</div></div>
+            </fieldset>
+          </div>
+          <div class="divTableColumn custom-essentialPackage custom-BestValue" ng-class="{'custom-selectedPlan' : planInformation.SupportHrs == 4}" data-ng-click="planInformation.SupportHrs == 4 || planSelected(1)" ng-if="planInformation.SupportHrs <= 4"  ng-disabled="planInformation.SupportHrs == 4">
+            <fieldset>
+              <legend align="center"><span ng-hide="planInformation.SupportHrs == 4">Best Value</span><span style="color:#fff;" ng-show="planInformation.SupportHrs == 4">Current Plan</span></legend>
+              <div><div class="custom-tableTitle">Essential</div></div>
+              <div><div class="custom-tableAmmt bg-primary"><div class="custom-tableAmmtInner"><span ng-if="planInformation.SupportHrs != 4">{{essentialUpgradeAmt | currency:USD:0}}</span><span ng-if="planInformation.SupportHrs == 4">current</span></div></div></div>
+              <div class="custom-tableRow"><div class="custom-tableProjectLimit">Up to 4 per/mo.</div></div>
+              <div class="custom-tableRow"><div class="custom-tableLimit">Unlimited</div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div><div class="custom-tableManager bg-primary">Up to 4 hrs per/mo.</div></div>
+              <div class="custom-tableRow"><div>CSR</div></div>
+            </fieldset>
+          </div>
+          <div class="divTableColumn" ng-class="{'custom-selectedPlan' : planInformation.SupportHrs == 12}"  data-ng-click="planInformation.SupportHrs == 12 || planSelected(2)" ng-if="planInformation.SupportHrs <= 12"  ng-disabled="planInformation.SupportHrs == 12">
+            <fieldset>
+              <legend align="center"><span ng-hide="planInformation.SupportHrs == 12">&nbsp;</span><span style="color:#fff;" ng-show="planInformation.SupportHrs == 12">Current Plan</span></legend>
+              <div>
+                <div class="custom-tableTitle">Professional</div></div>
+              <div><div class="custom-tableAmmt bg-success"><div class="custom-tableAmmtInner"><span ng-if="planInformation.SupportHrs != 12">{{professionalUpgradeAmt | currency:USD:0}}</span><span ng-if="planInformation.SupportHrs == 12">current</span></div></div></div>
+              <div class="custom-tableRow"><div class="custom-tableProjectLimit">Up to 12 per/mo.</div></div>
+              <div class="custom-tableRow"><div class="custom-tableLimit">Unlimited</div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div><div class="custom-tableManager bg-success">Up to 12 hrs per/mo.</div></div>
+              <div class="custom-tableRow"><div>CSR</div></div>
+            </fieldset>
+          </div>
+          <div class="divTableColumn" ng-class="{'custom-selectedPlan' : planInformation.SupportHrs == 20}" data-ng-click="planInformation.SupportHrs == 20 || planSelected(3)"  ng-disabled="planInformation.SupportHrs == 20">
+            <fieldset>
+              <legend align="center"><span ng-hide="planInformation.SupportHrs == 20">&nbsp;</span><span style="color:#fff;" ng-show="planInformation.SupportHrs == 20">Current Plan</span></legend>
+              <div><div class="custom-tableTitle">Enterprise</div></div>
+              <div><div class="custom-tableAmmt bg-warning"><div class="custom-tableAmmtInner"><span ng-if="planInformation.SupportHrs != 20">{{enterpriseUpgradeAmt | currency:USD:0}}</span><span ng-if="planInformation.SupportHrs == 20">current</span></div></div></div>
+              <div class="custom-tableRow"><div class="custom-tableProjectLimit">Unlimited</div></div>
+              <div class="custom-tableRow"><div class="custom-tableLimit">Unlimited</div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div class="custom-tableRow"><div class="custom-tableCheck"><i class="fa fa-check"></i></div></div>
+              <div><div class="custom-tableManager bg-warning">Up to 20 hrs per/mo.</div></div>
+              <div class="custom-tableRow"><div>PM</div></div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

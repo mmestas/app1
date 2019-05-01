@@ -1,0 +1,80 @@
+<div class="custom-systemNotificationsWrapper">
+  <div class="custom-interestedOpportunities md-whiteframe-2dp">
+    <div>
+      <div class="panel-heading">
+        <div>Opportunities</div>
+        <div class="custom-readNotification">
+          <div class="custom-hideShowMsgs" ng-hide="readMsgsVisible"><span ng-click="loadReadMsgs()"> Show Read Notifications</span> <i class="fa fa-times custom-closePanel custom-ml20" ui-sref="consultant.dashboard"></i></div>
+          <div class="custom-hideShowMsgs" ng-show="readMsgsVisible"><span ng-click="hideReadMsgs()"> Hide Read Notifications</span> <i class="fa fa-times custom-closePanel custom-ml20" ui-sref="consultant.dashboard"></i></div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div>
+          <ul class="collapsible popout" data-collapsible="accordion" >
+            <li ng-repeat="project in publicProjects" ng-init="initializeCollapse()">
+              <div class="collapsible-header">
+                <div style="display:flex; justify-content: space-between;">
+                  <div>
+                    <div>
+                      <i ng-if="!project.agency.imageFilename" class="fa fa-lightbulb" style="width:24px; margin-right:3px;"></i>
+                      <img ng-if="project.agency.imageFilename" ng-src="{{envURL+project.agency.imageFilename}}" style="width:24px; margin-right:3px;">
+                      <strong> {{project.title}}</strong>
+                    </div>
+                    <div>
+                      <div style="line-height: 24px; padding-left: 27px;"><span ng-if="project.agency.name"> {{project.agency.name}}</span></div>
+                    </div>
+                  </div>
+                  <div>
+                    Original Post Date: <small style="color:#777;">{{project.dateCreated | dateConverter | date}}</small>
+                  </div>
+                </div>
+
+              </div>
+              <div class="collapsible-body">
+                <div><h4><strong>Project:</strong> {{project.title}}</h4></div>
+                <div ng-if="project.agency.name">
+                  <div><strong>Agency:</strong> {{project.agency.name}}</div>
+                </div>
+                <div ng-if="!project.agency.name">
+                  <div><strong>Agency:</strong> None</div>
+                </div>
+                <div>
+                  <div><strong>Description:</strong></div>
+                  <div class="custom-ml10">{{project.description}}</div>
+                </div>
+                <div>
+                  <div>
+                    <strong>Work on site required?</strong>
+                    <span ng-if="project.workOnSiteRequired">Yes</span>
+                    <span ng-if="!project.workOnSiteRequired">No</span>
+                  </div>
+                </div>
+                <div><strong>Keywords:</strong></div>
+                <div class="custom-ml10">
+                  <span>{{project.keywords.keyword1}}</span><span ng-if="project.keywords.keyword2">,</span>
+                  <span> {{project.keywords.keyword2}}</span><span ng-if="project.keywords.keyword3">,</span>
+                  <span> {{project.keywords.keyword3}}</span><span ng-if="project.keywords.keyword4">,</span>
+                  <span> {{project.keywords.keyword4}}</span><span ng-if="project.keywords.keyword5">,</span>
+                  <span> {{project.keywords.keyword5}}</span>
+                </div>
+                <!-- <div><h4><strong>Categories:</strong></h4></div>
+                <div >
+                  <div ng-repeat="category in project.Categories">
+                    <div style="margin-bottom:3px;"><strong>{{category.name}}:</strong></div>
+                    <div class="label label-default label-outline custom-expertSkillsLabel" style="font-size:13px;" ng-repeat="subCat in category.subCategories">
+                      {{subCat.name}}
+                    </div>
+                  </div>
+                </div> -->
+                <div class="custom-collapsable-footer">
+                  <div ng-click="openIOSendMsgModal(project)"><i class="fa fa-paper-plane"></i> &nbsp; Send Message</div>
+                </div>
+
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,341 @@
+#custom-consultantDashboard .panel-default>.panel-heading {
+    color: #2E7492;
+    background-color: #fff;
+    border-color: #ecf0f1;
+}
+
+.custom-conDashSideBox {}
+  .custom-displayResponsive {display:none;}
+  @media screen and (max-width: 1024px) {
+    .custom-conDashSideBox {display:none;}
+    .custom-displayResponsive {display:block;}
+    .custom-sideMenu .list-group-item.custom-displayResponsive.custom-listHeader {height:45px;background: #2f7392;font-size: 18px;}
+  }
+.custom-conDashSideBox .row {margin:0;margin-bottom:15px;}
+.custom-conDashSideBox .custom-conDashProfPic {height:200px;border-bottom: 1px solid #ddd;border: 0;text-align: center;padding: 10px;/* background: #2f7492; */}
+.custom-conDashSideBox .custom-conDashProfPic img {height: calc(100% - 24px);border-radius: 100px;}
+.custom-conDashSideBox .custom-consDashSideBoxInfo {}
+.custom-conDashSideBox .custom-consDashSideBoxInfo .custom-consDashLeftInfo {
+    padding: 12px 0;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+.custom-conDashSideBox .md-whiteframe-2dp, .custom-conDashSideBox .md-whiteframe-3dp {
+    background: #7a7a7a;
+    color: #fff;
+}
+.custom-conDashProfPicName {font-weight: bold;font-size: 20px;color: #2f7492;}
+.custom-conDashSideBox .md-whiteframe-2dp .custom-conDashProfPicName {color:#fff;}
+
+form[name="consultantContactInfoForm"]  {padding:10px 0;}
+.custom-consultantEditPic {display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+padding: 0;
+min-width: 150px;
+background: transparent;}
+.custom-sideSectionTitle {height: 35px;padding: 4px;font-size:20px;background: #555;color: #fff;text-align: center;}
+.custom-sideSectionTile-sm {height:75px; padding:3px; font-size: 14px; text-align: center;border:1px solid #555;}
+.custom-sideSectionTile-lg {height:200px;border: 1px solid #ddd;text-align: center;padding: 10px;}
+
+.alertDanger {color: rgb(249, 0, 12);}
+.panel-default>.panel-heading .badge.badge-outline.alertNewNotification {color: #fd8724;background: transparent;border-color: #fd8724;}
+.custom-msgIcon:hover {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+    margin-right:10px;
+}
+.custom-msgImg {height: calc(100% - 4px);height: 100%;padding: 0;float:left;margin-right: 10px;border-radius: 50%;}
+.collapsible-body div.custom-msgText {margin-top:30px; margin-bottom:25px;}
+.custom-msgText a {cursor: pointer; font-weight: bold;text-decoration: underline;}
+.collapsible-body div.custom-collapsable-footer {padding: 7px;background: #ddd;display: flex;justify-content: space-between;}
+.collapsible-body div.custom-collapsable-footer i {font-size: 18px;}
+.custom-hideShowMsgs {text-align: right;/*width: 95%;*/margin-left: auto;margin-right: auto;padding-left: 15px;padding-right: 15px;}
+.custom-collapseSubTitle {margin-top: -34px;font-size: 13px;margin-left: 45px;}
+.custom-msgSubTitle {background: transparent;color: #6a6a6a;margin-top: 8px;margin-left: -10px;margin-right: -10px;padding: 3px 10px;font-size: 13px;
+  p {font-size: 13px;}
+}
+.custom-msgTitleWrapper {padding: 6px;}
+
+/****************************** MY PROFILE ******************************/
+#custom-consultantMyProfile  {overflow: hidden;}
+
+  .custom-consultantEditSection {padding: 7px; border: 1px solid #eee;}
+#custom-consultantMyProfile .custom-consultantEditSection:nth-child(even) {background: #ecf0f1;}
+    .custom-consultantEditSectionWithBtn {display: flex;justify-content: space-between;background: $appBlue;margin: -8px -8px 3px;padding: 0px 15px;color:#fff;align-items: center;}
+    .custom-consultantEditSectionWithBtn h4 {color:#fff;}
+    .custom-consultantEditSectionWithBtn i {font-size: 20px;vertical-align: middle;transition:0.3s;}
+    .custom-consultantEditSectionWithBtn .svg-inline--fa {font-size:20px;}
+    .custom-consultantEditSectionWithBtn i:hover {font-size:23px;}
+    .custom-consultantSkillsList, .custom-consultantCategoriesList {width:100%;overflow: hidden;display: flex;flex-wrap: wrap;}
+    .custom-consultantSkillsList li,.custom-consultantCategoriesList li {float:left;margin-right: 15px;margin-top: 5px;border: 1px solid #c3c3c3;padding: 5px 15px;border-radius: 15px;display: flex;align-items: center;}
+    .custom-consultantSkillsList li:first-child,.custom-consultantCategoriesList li:first-child {margin-top:5px;}
+    .custom-consultantAgencyLogo {height:40px;}
+    .custom-consultantEditSection .h3 {padding:0;}
+    .custom-consultantEditSection .h3 .small {font-weight: bold; color:#2e7492;}
+    .custom-consultantEditSection .h3 .custom-rateAvailabilityResponse {font-size: 17px; color:#555;}
+#consultantContactInfo h3, #consultantContactInfo h4, #consultantContactInfo h5, #consultantContactInfo h2 {/*NOT sure why this was here - overriding somewhere else?*//* margin:0; */}
+#consultantContactInfo .custom-expertName {font-weight: 700;}
+#consultantContactInfo .custom-expertAddress i.fa {width:20px;}
+.profileSectionInner {padding: 25px 10px;}
+  /************* EDIT MY PROFILE  CONTACT INFO************/
+  .custom-readMoreLink {margin-top:15px; font-weight:bold; margin-left:20px; }
+  .custom-readMoreLink a {font-weight: 600;cursor: pointer;}
+  #consultantProfilePic {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 2px solid #2e7292;
+      top: 0;
+    }
+.custom-consultantPic  {margin-bottom: 8px;width: 100%;height: 200px;max-width: 200px;max-height: 200px;position: relative;cursor: pointer;}
+.custom-consultantPic img {width:100%;max-height:100%;}
+.custom-consultantEditPic .custom-consultantPic img {max-height: 200px;}
+  #consultantContactInfoFields  md-input-container {margin-bottom:0;width: 100%;}
+/*   #consultantContactInfo .custom-expertAddress {font-size: 17px;} */
+
+.custom-profileReference {}
+.custom-profileReference h4 {margin-bottom: 5px;}
+.custom-profileReference .fa-check {color: $appGreen;}
+.custom-profileReference .fa-times {color: #F44336;}
+  /************* EDIT MY PROFILE SKILLS ************/
+  #consultantSkillsFields md-input-container, #consultantEditAgencies md-input-container {margin:0;width: 100%;}
+  #consultantSkillsFields md-input-container.last-item {margin-bottom:15px;width: 100%;}
+  #consultantSkillsFields md-input-container input, #consultantEditAgencies md-input-container input {width: calc(100% - 30px);background-color: transparent;}
+  #consultantSkillsFields md-input-container i {font-size:20px;color:#2e7292;}
+  #consultantSkillsFields md-input-container .svg-inline--fa {font-size:20px;}
+  #consultantcategorySelects {margin-top: 30px;margin-bottom: 15px;}
+  .custom-resumeUploadBtn {
+    background: $appBlue;
+    padding: 9px;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+#consultantEditRateAvailabilityFields md-input-container {margin-bottom:0;width: calc(100% - 50px);}
+/************* EDIT Clearance Level ************/
+#consultantEditClearances md-input-container {margin-bottom:0;width:100%; max-width:300px;}
+/************* EDIT References and Certifications ************/
+#consultantEditReferencesAndCertifications md-input-container {margin-bottom:0;width:100%;}
+.custom-reviewPic {width:50px; height:50px; border-radius:25px;}
+.custom-consultantListWrapper {margin-top:15px;}
+.custom-consultantList {margin-bottom:5px; font-size: 17px; color:#555;}
+.custom-consultantList button.btn.btn-sm {padding: 2px 6px;}
+/************* EDIT Agencies ************/
+#consultantEditAgencies md-input-container .md-errors-spacer {display: none;}
+#consultantEditAgencies md-autocomplete[md-floating-label] .md-show-clear-button button {top:21px;}
+/************** QUOTE INVITATION *************/
+.custom-systemNotificationsWrapper {padding:10px;}
+.custom-systemNotificationsWrapper .collapsible.popout > li {margin-bottom:5px;}
+.custom-systemNotificationsWrapper md-tab-content {box-shadow: none; padding:0;}
+#custom-customConsultantDash .custom-systemNotificationsWrapper {padding:0;}
+
+
+.custom-circleReturnBtn {border:1px solid;border-radius: 25px;height: 40px;width: 40px;padding:5px;margin: 5px;text-align: center;display: inline-block;color: #f77a24;background: #f77a24;}
+.custom-circleReturnBtn.miniBtn {height: 26px;
+    width: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
+.custom-circleReturnBtn i {font-size: 20px;color: #fff;}
+.custom-circleReturnBtn.miniBtn i {font-size: 14px;}
+.custom-circleReturnBtn .svg-inline--fa {font-size:20px;}
+.custom-backToNotifications span {color: #2f7492;}
+.custom-backToNotifications {}
+  .custom-qiAgencymgWrapper{text-align: center;}
+  .custom-qiAgencymgWrapper img {height:75px; width:75px;}
+.blur {filter: blur(6px);}
+  #NDAOverlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 2;
+  }
+  #NDALink {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 42px;
+      color: white;
+      transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      cursor: pointer;
+      text-align: center;
+  }
+#NDALink:hover {color: #b8e8ff;}
+
+
+.custom-ndaDialogPadding {padding: 10px 15px;}
+.custom-ndaOciChecboxes {}
+.custom-ndaOciChecboxes .custom-ndaOciCheckbox {display: flex; align-items:flex-start;}
+.custom-ndaOciChecboxes .custom-ndaOciCheckbox label {color:#636363;}
+.custom-ndaOciChecboxes .custom-ndaOciCheckbox label a {font-weight:600}
+.custom-ndaOciChecboxes .custom-ndaOciCheckbox md-checkbox[disabled] label, .custom-ndaOciChecboxes .custom-ndaOciCheckbox md-checkbox[disabled] label a {color:$appMedLtGrey;}
+.custom-ndaOciChecboxes .custom-ndaOciCheckbox md-checkbox .md-container {top: 0; -webkit-transform: translateY(0); transform: translateY(0);}
+/************************* SEND MESSAGE ************************/
+.custom-interestedOpportunities .collapsible-header {height:47px;padding: 12px 8px;line-height: 24px;}
+
+
+/************************* APPROVED Projects *******************/
+#approvedProjects {}
+#approvedProjects .collapsible-header {display: flex; align-items: center;}
+#approvedProjects .collapsible-header h4, .custom-systemNotificationsWrapper .collapsible-header h4 {color: #2e7492;margin:0;margin-bottom:5px;margin-top: 3px;}
+#approvedProjects .collapsible-header h5 {color: #2e7492;margin:0;}
+#approvedProjects .collapsible-body {padding:0;}
+#approvedProjects .collapsible-body .custom-taSection img {max-width: 100%;/* border-radius: 50px; */max-height: 150px;}
+
+#taskApproveWorkDescription {}
+#taskApproveWorkDescription > div > div {padding:0;border: 1px solid #eee;padding: 0 8px 8px;margin: 7px -5px;background: rgba(238, 238, 238, 0.2509803922);}
+#taskApproveWorkDescription   .row {display: flex;padding:0;}
+#taskApproveWorkDescription   h5 {background: #2f7492;color: #fff; padding: 5px;}
+#taskApproveWorkDescription   input {border: 1px solid #2f739252;}
+#taskApproveWorkDescription  .custom-apWD {flex-grow:1; width:333px; padding:2px;}
+#taskApproveWorkDescription  .custom-apHQ {width:155px; padding:2px;}
+#taskApproveWorkDescription  .custom-apHC {width:155px; padding:2px;}
+#taskApproveWorkDescription  .custom-apAc {padding:2px;width: 115px;}
+#taskApproveWorkDescription  .custom-apAc button {width:100%;}
+#taskApproveWorkDescription  .custom-apHC input {width:75px;}
+
+#taskApproveWorkDescription  .custom-ieDes {flex-grow:1; padding:2px;}
+#taskApproveWorkDescription  .custom-ieDes textarea {width:100%; height:45px;}
+#taskApproveWorkDescription  .custom-ieAmt {width: 115px;padding:2px;}
+#taskApproveWorkDescription  .custom-ieAmt input {width: 90px;display:inline-block;margin-right:5px;}
+#taskApproveWorkDescription  .custom-ieAmt .fa-times {color:#F44336;}
+#taskApproveWorkDescription  .custom-ieIndex {width:35px;padding:2px;}
+#taskApproveWorkDescription  .custom-ieIndex span {font-size: 17px;}
+#taskApproveWorkDescription .custom-ieDes h5, #taskApproveWorkDescription .custom-ieAmt h5, #taskApproveWorkDescription .custom-ieIndex h5 {background: #c0ddea;color: #114b65;padding: 5px;}
+#approvedProjects .custom-taSection {margin: auto;padding: 5px 15px 15px;border-bottom: 2px solid #ebebeb;}
+#approvedProjects .custom-taSection-last {border-bottom:0;}
+.custom-apCompanyImg {display:flex; flex-direction:column; justify-content:center; align-items:center;}
+
+
+
+/********************* NEW 2.19.18 *************************/
+#custom-consultantDashInner {}
+.custom-dashInnerWrapper {display: flex; justify-content: space-between; padding:20px;}
+
+.custom-dashboardBoxesWrapper {display:flex;justify-content: space-between;flex-wrap:wrap;padding: 0px 0;}
+.custom-dashboardBoxes {}
+.custom-dashboardBox {display: flex; flex-direction: column; justify-content: center; align-items: center;background: #ebebeb;background: #fff;
+  margin: 5px;padding: 25px;box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+  -webkit-transition: 1s;transition: 1s;cursor: pointer;}
+.custom-dashboardBox:hover {background: #2f739240;}
+.custom-dashboardBox:hover i {color:#446e82;color:#6d8794;}
+.custom-dashboardBox:hover .custom-dashBoxTitle, .custom-dashboardBox:hover .custom-dashBoxNumber {color:#6d8794;}
+.custom-dashboardBoxXL {width:100%;}
+  .custom-dashboardBoxLg {width:calc(50% - 15px);}
+  .custom-dashboardBoxMd {width: calc(33% - 10px);}
+  .custom-dashboardBoxSm {width: calc(25% - 10px);}
+
+@media screen and (max-width: 768px) {
+  .custom-dashboardBoxLg {width:100%;}
+  .custom-dashboardBoxMd {width:100%;}
+  .custom-dashboardBoxSm {width:100%;}
+}
+    .custom-dashBoxTitle {color:#2f7492;transition: 1s;}
+.custom-dashBoxNumber {font-size: 20px;font-weight: 700;transition: 1s;color: #2f739254;}
+.custom-dashboardBox {
+  i {font-size: 35px;color:#2f7492;transition: 1s;}
+  &.custom-text-danger {color: $appDangerRed; background-color: lighten($appDangerRed, 50%);
+    i, .custom-dashBoxTitle {color: $appDangerRed;}
+    .custom-dashBoxNumber {color: $appDangerRed; opacity: 0.3;}
+  }
+//
+}
+.custom-dashboardBox .svg-inline--fa {font-size: 30px;color:#2f7492;transition: 1s;}
+
+.custom-width9 {width:75%; margin:5px;}
+.custom-width6 {width:50%; margin:5px;}
+.custom-width3 {width:25%; margin:5px;}
+
+#custom-consultantDashInner .custom-width6 li {font-size:18px;}
+#custom-consultantDashInner .list-group {margin-bottom:0;}
+#custom-consultantDashInner li.list-group-item {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+#custom-consultantDashInner li.list-group-item .svg-inline--fa {font-size:16px;}
+#custom-consultantDashInner .custom-width6 li i {color:#2f7492;}
+
+
+#custom-consultantDashboard .panel-heading {    border-radius: 0;
+    padding: 8px 15px;
+    background: #2f7492;
+    color: #fff;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;}
+.custom-readNotification {min-width: 260px;}
+#custom-consultantDashboard .collapsible-header {
+    display: block;
+    cursor: pointer;
+    height: 60px;
+    line-height: 19px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #2f7392;
+    font-weight: 500;
+    font-size: 17px;
+}
+/* #custom-consultantDashboard .collapsible-body {border-top: 2px solid #eee;} */
+#consultantProfile {overflow: hidden;}
+
+#custom-consultantDashboard .custom-consultantEditSection .collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 38px;
+  line-height: 17px;
+  padding: 5px 10px;
+  background-color: #2f7392;
+  color: #fff;
+  font-weight: 500;
+  font-size: 19px;
+}
+#custom-consultantDashboard .progress {
+    background-color: #ffffff;
+}
+
+.profileDivider {border-bottom:1px dashed #999; padding:10px 0;}
+.showFullRating {display:flex; justify-content:space-between;}
+.showRatingDetails {display: none; align-items: center; margin-top: 0px; margin-left: 2px; font-size: 12px; color: #2f7392;}
+.showFullRating:hover .showRatingDetails {display:inline-flex;}
+.ratingNumber {font-size:14px; color:$appMedLtGrey;}
+.ratingDetails {display:flex; justify-content:space-between; margin-bottom: 7px;}
+.underlineSelection {text-decoration:underline;}
+
+#invitedConsultantLanding .collapsible {border:0;}
+#invitedConsultantLanding .collapsible .expand, #invitedConsultantLanding .collapsible .collapse  {float:right;}
+#invitedConsultantLanding .collapsible .expand {display:block;}
+#invitedConsultantLanding .collapsible .collapse {display:none;}
+#invitedConsultantLanding .collapsible li.active .expand {display:none;}
+#invitedConsultantLanding .collapsible li.active .collapse {display:block;}
+/* #invitedConsultantLanding .collapsible .collapse {display:none; float:right;}
+
+#invitedConsultantLanding .collapsible.active .collapse {display:block;} */
+/* #invitedConsultantLanding .collapsible li {border-bottom:1px solid #2f7392; } */
+#invitedConsultantLanding .collapsible-header {height: unset;padding: 12px;/*background: transparent;color: #2f7392;*/ transition: 0.3s;}
+#invitedConsultantLanding .collapsible-header:hover {}
+#invitedConsultantLanding  .collapsible-body {padding:0;border: 0;}
+#invitedConsultantForm {}
+#invitedConsultantForm input {}

@@ -1,0 +1,63 @@
+<div login-header class="custom-min480"></div>
+<div id="signUpComplete" class="view custom-signUpView" ng-init="signInInit()">
+  <div login-responsive-header class="custom-max480"></div>
+    <div class="custom-signUpStatusBar custom-min480" layout="row" layout-align="center center"><h1>Log In and get to work</h1></div>
+    <md-toolbar class="md-hue-custom custom-min480" >
+      <div class="md-toolbar-tools" layout="row" layout-align="center center">
+        <h1 class="md-flex" ng-hide="hideSignInForm">Log In</h1>
+        <h1 class="md-flex" ng-show="hideSignInForm">Reset My Password</h1>
+      </div>
+    </md-toolbar>
+
+      <div class="custom-signInContainer md-whiteframe-3dp" ng-hide="hideSignInForm">
+        <div class="custom-signIn" >
+          <form name="gpSignInForm" novalidate>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" ng-class="{'custom-errOutline' : (gpSignInForm.email.$touched || gpSignInForm.$submitted) && gpSignInForm.email.$invalid}" placeholder="Email Address" ng-model="signIn.username" required>
+              <span class="custom-error" ng-show="(gpSignInForm.email.$touched || gpSignInForm.$submitted) && gpSignInForm.email.$invalid">Please enter a valid email</span>
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" class="form-control" ng-class="{'custom-errOutline' : gpSignInForm.$submitted && gpSignInForm.password.$invalid}" placeholder="Password" ng-model="signIn.password" required>
+              <span class="custom-error" ng-show="gpSignInForm.$submitted && gpSignInForm.password.$invalid">Please enter a password</span>
+            </div>
+
+            <div >
+              <md-checkbox ng-model="signIn.rememberme" aria-label="rememberMe" class="md-gpSolidBlue md-raised">Remember Me {{signIn.rememberMe}}</md-checkbox>
+              <div class="custom-forgotPass custom-min480" ng-click="forgotPassLink()">Forgot Password?</div>
+            </div>
+
+            <div class="custom-error" ng-show="showLoginError">The username and/or password you entered do not match our records</div>
+            <div class="custom-btnWrapper custom-thankYouBtn"><button class="btn btn-primary custom-wideBtn" type="submit" ng-click="signInSubmit(signIn, gpSignInForm.$invalid)">Log In</button></div>
+            <div class="custom-max480" style="text-align:center;" ng-click="forgotPassLink()">Forgot Password?</div>
+            <div class="custom-hr custom-min480">
+              <span class="custom-hrText">New to CompanyNme?</span>
+            </div>
+            <div class="custom-btnWrapper custom-thankYouBtn custom-min480"><button class="btn btn-primary btn-outline custom-wideBtn" type="submit" ng-click="goToSignUpLanding()">Sign Up</button></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="custom-forgotPassContainer" ng-show="hideSignInForm">
+        <div class="custom-signIn">
+          <div class="custom-requestPassInfo" ng-hide="passwordEmailSent">
+            <p>Please enter your email and click send.  If your email exists in our system, your password will be reset and sent to the email address you provided.</p>
+            <p>Please check your Junk Mail/Spam folder if you do not see an email in your Inbox.</p>
+          </div>
+          <div class="custom-requestPassInfo" ng-show="passwordEmailSent">
+            <p>Thank you!  An email has been sent to the address you provided.  Click Return to Login to Log In.</p>
+          </div>
+          <form name="gpForgotPassForm"  novalidate>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" ng-class="{'custom-errOutline' : gpForgotPassForm.email.$pristine && emailNeeded}" placeholder="Enter your email address" ng-model="forgotPass.email" required>
+              <span class="custom-error" ng-show="(gpForgotPassForm.email.$touched || gpForgotPassForm.$submitted) && gpForgotPassForm.email.$invalid">Please enter a valid email</span>
+            </div>
+
+
+            <div class="custom-btnWrapper custom-thankYouBtn">
+              <button class="btn btn-primary" type="submit" ng-click="sendPassword(forgotPass.email, gpForgotPassForm.email.$invalid)">Send Email</button>
+              <div><div class="custom-returnToSignIn" ng-click="returnToSignIn()">Return to Login</div></div>
+            </div>
+          </form>
+        </div>
+      </div>
+</div>

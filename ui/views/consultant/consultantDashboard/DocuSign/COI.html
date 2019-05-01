@@ -1,0 +1,72 @@
+
+<style>
+  @media print {
+      @page {
+        size: letter;
+        margin: 2.0cm;
+      }
+      @page:right{
+        @bottom-right {
+          content: counter(page);
+        }
+      }
+  }
+  @page {
+    size: letter;
+    margin: 2.0cm;
+  }
+  @page:right{
+    @bottom-right {
+      content: counter(page);
+    }
+  }
+  .footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    color: red;
+    text-align: center;
+  }
+
+  @font-face {
+    font-family: "DawningofaNewDay";
+    src: url("/fonts/DawningofaNewDay.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+</style>
+
+<!-- <div style="font-family:arial; max-width:1000px; margin:auto; padding:20px;"> -->
+<div style="font-family:arial; font-size:17px;">
+  <div style="text-align:center;">
+    <h3 style="margin:0; margin-bottom: 5px;">CONFLICTS OF INTEREST STATEMENT</h3>
+    <h4 style="margin:0;">Note: You are entering into a legally binding agreement.<h4>
+  </div>
+
+<div style="text-align: justify; margin-bottom: 85px;">
+<!-- Deleted sensitive Information -->
+</div>
+
+  <div>
+    <div>
+      <div style="width:200px; font-weight:bold; text-align:right; display:inline-block;">Signature:</div>
+      <div style="display:inline-block; font-family:DawningofaNewDay;"> [Consultant User eSignature]</div>
+    </div>
+    <div>
+      <div style="width:200px; font-weight:bold; text-align:right; display:inline-block;">Name:</div>
+      <div style="display:inline-block">	[Consultant Name]</div>
+    </div>
+    <div>
+      <div style="width:200px; font-weight:bold; text-align:right; display:inline-block;">Date:</div>
+      <div style="display:inline-block">	[date]</div>
+    </div>
+    <div>
+      <div style="width:200px; font-weight:bold; text-align:right; display:inline-block;">Contract, Grant,Tender, or Projectname:</div>
+      <div style="display:inline-block">	[Project Name, RFP Solicitation Title, RFP Solicitation Number]</div>
+    </div>
+  </div>
+
+  <div style="text-decoration:underline; color:red; text-align:center; margin-top:100px;" >CONFIDENTIAL</div>
+</div>

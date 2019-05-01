@@ -1,0 +1,451 @@
+/**********************************************************/
+/*********************** APP ITEMS ************************/
+/**********************************************************/
+// .custom-image-lg {width:55%; height:55%;} //On 4.29.19 suddenly started acting strange - this class is used on the sign up landing page only for the two images
+.custom-flex-grow {flex-grow:1;}
+// .abHideShowInfo {display:inline-block !important;}
+/***************************************************************************/
+/********************************** NAV ************************************/
+/***************************************************************************/
+.navbar-default .navbar-nav>li>a.custom-signInLink {color:$appDkGrey;}
+.custom-signInLink span {color:$appBlue;}
+
+
+/**********************************************************/
+/************************* VIEWS **************************/
+/**********************************************************/
+/* Check to see if it's 70 or 80px - signup vs dash */
+
+.custom-signUpView {padding-top:80px; overflow: hidden; padding-bottom:80px;
+}
+  /************************* views/signIn.html **************************/
+  .custom-signInContainer {width:100%;padding: 0 20px;max-width: 640px;margin:auto;background: $appWhite;}
+  .custom-signIn {padding:25px;max-width: 600px;margin:20px auto;}
+  .signUpBtn {width:100%;}
+  .custom-forgotPassContainer {width:100%; padding: 0 20px; max-width:1100px; margin:auto;}
+  .custom-forgotPass {width:150px; float:right;cursor: pointer;}
+  .custom-forgotPass:hover {color: $appMedOrange;}
+  .custom-requestPassInfo {padding: 10px;background: $appWhite; margin-bottom: 15px;border: 1px solid darken($appBorderGrey, 4%);
+    p {line-height: 14px;text-align: left;}
+
+  }
+  // .custom-requestPassInfo p {line-height: 14px;text-align: center;}
+  .custom-returnToSignIn {padding: 10px 0;cursor: pointer; width:110px; margin:auto;}
+  .custom-returnToSignIn:hover {color: $appMedOrange;}
+  .custom-hr {width: 100%; height: 20px; border-bottom: 2px solid $appBorderGrey; text-align: center; margin-bottom:20px;}
+  .custom-hrText {font-size: 25px; padding: 0 10px; background: $appWhite;line-height: 35px;color: $appMdDkGrey;}
+  /************************* SIGNUP BARS **************************/
+  .custom-signUpStatusBar, #signUpLanding .custom-signUpBar {text-align:center;}
+  .custom-signUpStatusBar {background: $appBlue;}
+  .custom-signUpStatusBar h1 {font-size:37px;}
+  #signUpLanding .custom-signUpStatusBar h1, #signUpLanding .custom-signUpStatusBar h2,
+  .custom-signUpStatusBar h1, .custom-signUpStatusBar h2 {color:$appWhite;padding: 20px 0 20px;margin: 0;}
+  .custom-signUpStatusBar h2 {margin: 0;}
+  .custom-signUpStatusBar .progress {margin: 5px auto 5px;max-width: 1100px;width: 90%;}
+  .view md-toolbar h1, .view md-toolbar h2, .view md-toolbar h3, .view md-toolbar h4, .view md-toolbar h5 {margin:0;}
+  .view md-toolbar h1 {font-size: 30px;padding-top: 5px;}
+  .view md-toolbar h2 {font-size: 24px;}
+  .view.custom-consultantSignUp  md-toolbar h2 {font-size: 22px; padding:0;}
+  /************************* SIGNUPLANDING.html **************************/
+  #signUpLanding h1, #signUpLanding h2, #signUpLanding h3, #signUpLanding h4, #signUpLanding h5,
+  #signUpComplete h1, #signUpComplete h2, #signUpComplete h3, #signUpComplete h4, #signUpComplete h5
+    {padding:0;margin: 5px 0;text-align: center;}
+  #signUpLanding md-toolbar h1 {font-weight: bold;}
+  #signUpLanding .container {max-width: 1200px; margin:auto;}
+  #signUpLanding .container h4 {color: #999;}
+  #signUpLanding .container h3 {color: $appBlue;font-weight: bold;}
+  #signUpLanding .container .col-md-6 {width:calc(50% - 20px);}
+  .hr-text {
+    -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+  overflow: visible;
+}
+    .hr-text:before {
+      content: '';
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      // width: 100%;
+      width: 450px;
+      height: 3px;
+    }
+    .hr-text:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+      padding: 0 .5em;
+      line-height: 26px;
+      color: #818078;
+      background-color: #fcfcfa;
+      -ms-transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg);
+      left:270%;
+      left:190px;
+      top: 0%;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+  #signUpLanding .custom-signUpBox {margin: 30px 0;padding: 20px;}
+  #signUpLanding .custom-signUpBox button {margin-top:20px;}
+  #signUpLanding .custom-signUpBar {background: $appBorderGrey;}
+
+
+  /************************* views/company/signupPro/step1.html  Design #2 **************************/
+#signUpStep1 md-checkbox {margin-bottom:0;margin-left: 10px;}
+#signUpStep1 .custom-categoryCheckboxes {cursor: pointer;}
+#signUpStep1 .custom-subCategoryCheckboxes {display:none;position: absolute;left:40%;top: 0;background: white;padding: 3px 7px;width:60%;left: 40%;padding: 15px;font-size: 20px;font-weight: 600;background: transparent;background: #0000007d;height: 100%;z-index: 1000;color: $appWhite;}
+#signUpStep1 .custom-categoryCheckboxes:hover .custom-subCategoryCheckboxes {display: block;}
+
+.custom-signUpStep1-body {position:relative;flex-wrap: wrap;}
+.custom-StepContainer .custom-signUpStep1-left {width:40%;}
+.custom-signUpStep1-left {border:1px solid transparent;padding:15px;}
+.custom-signUpStep1-left > ul > li {position:unset;}
+.custom-signUpStep1-left > ul > li > div {display:flex; justify-content: space-between;font-weight:600;}
+.custom-signUpStep1-right {width:60%; position:relative;}
+.custom-signUpStep1-right img {width:100%;}
+.custom-signUpOverlay {display:none;position: absolute;background: #777;opacity: 0.5;height: 100%;width: 100%;top: 0;}
+.custom-categoryCheckboxes:hover .custom-signUpOverlay {display:block;}
+
+  /************************* views/company/signupPro/step1.html **************************/
+  .custom-StepContainer {padding: 20px 20px;}
+  .custom-StepContainer h1, .custom-StepContainer h2, .custom-StepContainer h3, .custom-StepContainer h4 {text-align: center;}
+  .custom-StepContainer .custom-categoryCheckbox {width: 33%; min-width: 300px;border: 2px solid$appMedLtGrey;margin-bottom: 8px;border-radius: 9px;}
+  /****************  NEED TO MAKE THESE STANDARD! **************/
+  .custom-StepContainer md-input-container .md-input {padding: 13px;line-height: 45px;height: 45px;background: $appWhite;border-width: 1px;-ms-flex-preferred-size: 26px;border-color: $appBorderMdGrey;}
+  .custom-StepContainer md-input-container.md-input-focused .md-input,
+  .custom-StepContainer md-input-container.md-input-resized .md-input,
+  .custom-StepContainer md-input-container .md-input.ng-invalid.ng-dirty {border-width: 1px;}
+  .custom-StepContainer md-input-container label:not(.md-container-ignore){position: absolute;bottom: 84%;left: 15px;right: auto;right: 15px;color: $appLtGreyBlue;font-weight: 300;margin: 0;margin-bottom: 2px;transform: translate3d(0,0px,0) scale(.75);width: calc(100% - 30px);}
+  .custom-StepContainer md-input-container.md-input-focused label:not(.md-no-float),
+  .custom-StepContainer md-input-container.md-input-has-placeholder label:not(.md-no-float),
+  .custom-StepContainer md-input-container.md-input-has-value label:not(.md-no-float) {-webkit-transform: translate3d(0,-7px,0) scale(1);transform: translate3d(0px,-7px,0) scale(1);color: $appBlue;}
+  .custom-StepContainer md-autocomplete[md-floating-label] .md-show-clear-button button {top: 8px;}
+
+
+  .custom-Step {max-width:800px; margin:auto;}
+  .custom-Step md-radio-button {display: inline-block; margin-left: 15px;}
+  .custom-Step md-radio-button .md-label {margin-left: 25px;}
+  .custom-Step-Title {margin: 20px 0;}
+  .custom-Step md-autocomplete md-input-container {padding:0; margin-bottom:15px; margin-top:0;}
+  .custom-Step md-input-container .md-errors-spacer {display:none;}
+  .custom-Step div[ng-form] {overflow:hidden;padding-top: 20px;}
+  .custom-categoryTiles {
+    flex-wrap: wrap;
+    margin: 40px auto 0;
+  }
+   .custom-categoryTile {
+      height: 175px;
+      width: calc(25% - 20px);
+      margin: 10px 10px;
+      border: 2px solid;
+      border-radius: 5px;
+   }
+   .custom-categoryTileInnerWrapper {padding: 10px;}
+   .custom-categoryCheckboxWrapper {padding: 10px;background: $appBlue;color:$appWhite;font-size: 18px;}
+   .custom-categoryTitle {text-align: center;}
+
+.custom-flexCheckboxes md-checkbox {height: 35px;width:35px;margin-bottom: 11px;/* float: right; */}
+.custom-flexCheckboxes  md-checkbox .md-container {width:35px; height:35px;}
+   .custom-flexCheckboxes md-checkbox.md-gpBlue.md-checked .md-icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border-color: $appBlue;
+      background-color: $appBlue;
+  }
+  .custom-flexCheckboxes md-checkbox.md-gpBlue:not(.md-checked) .md-icon {
+    border-color: rgba(255, 255, 255, 0.75);
+}
+.custom-flexCheckboxes md-checkbox.md-gpBlue:not(.md-checked) .md-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border-color: $appBlue;
+  background-color: $appWhite;
+}
+  .custom-flexCheckboxes md-checkbox:not([disabled]).md-gpBlue.md-checked .md-icon {}
+   .custom-flexCheckboxes md-checkbox.md-gpBlue.md-checked .md-icon:after {
+       border-color: $appBlue;
+       border-color: $appWhite;
+       height: 22px;
+       width: 12px;
+       border-width: 3px;
+       left: 10px;
+       top: 3px;
+   }
+.custom-flexCheckboxes md-checkbox .md-container {width: 35px;
+    height: 35px;
+    width:35px;
+    right: 0;
+    left: initial;}
+.custom-flexCheckboxes {display: flex;flex-wrap: wrap;justify-content: space-between;}
+
+.custom-postAProject .custom-categoryCheckbox {
+    width: calc(33% - 10px);
+    min-width: 300px;
+    border: 2px solid$appMedLtGrey;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-radius: 0;
+}
+.custom-smallSubcategories {font-size: 12px;}
+@media only screen and (max-width: 963px) {
+  .custom-categoryCheckbox {width: 49%;min-width: 300px;}
+}
+@media only screen and (max-width: 664px) {
+  .custom-categoryCheckbox {width: 100%;min-width: 100%;}
+  .custom-StepContainer .custom-signUpStep1-left, .custom-StepContainer .custom-signUpStep1-right {width:100%;padding: 0px;}
+  .custom-signUpStep1-right {display:none;}
+}
+/* @media only screen and (max-width: 963px) { }
+  @media only screen and (max-width: 963px) { } */
+   /* Added 12.18.17 */
+#f1_container {
+  position: relative;
+  margin: 0px auto;
+  /* width: 450px;
+  height: 281px; */
+  width: 100%;
+  height: 190px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  /* box-shadow: -5px 5px 5px #aaa; */
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: $appBlue;
+  text-align: left;
+  background-color: $appBorderGrey;
+}
+
+
+  /************************* views/company/signupPro/step2.html **************************/
+
+  .custom-selectedCategories {}
+  .custom-selectedCategories .form-group .form-control {width:calc(100% - 50px); display:inline-block;}
+  .custom-selectedCategories .form-group button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    box-shadow: none;
+    background: #F44336;
+    display: inline-block;
+    border-style: none;
+    color: $appWhite;
+    margin-left: 8px;}
+  .custom-selectedCategories .fa {font-size: 32px; margin-left: 4px; color: #F44336; vertical-align: middle;}
+
+/************************* views/company/signupPro/GetSAM.html **************************/
+
+  .md-autocomplete-suggestions li {line-height: unset;height: auto;padding: 3px 6px;font-size: 12px;}
+  .md-autocomplete-suggestions li:hover .custom-SAMSAddress {background:$appMdDkGrey;color:$appWhite;position: absolute;height: auto;right: 0;}
+  .custom-SAMSResult {display: flex; }
+    .custom-SAMSName {width:50%;border: 1px solid $appMedLtGrey;padding: 10px 10px;overflow: hidden;text-overflow: ellipsis;display: flex;justify-content: space-between;}
+   .custom-SAMSName > div {overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 30px);}
+    .custom-SAMSAddress {width: 50%; display:none;border-left: 1px solid $appMedLtGrey;padding: 10px;}
+    .custom-SAMSResult:hover .custom-SAMSAddress {display: block;}
+    .custom-SAMSName i {display: none;float:right;color:$appMdDkGrey;margin-top: 3px;}
+    .custom-SAMSResult:hover .custom-SAMSName i {display: block;float:right;}
+// /************************* views/company/signupPro/step4.html PAYMENT**************************/
+//   /* .custom-Step4 {max-width:800px; margin:auto;} */
+//   .custom-ecommerceWrapper {margin: 0 0 15px;}
+//   .custom-price {text-align: right;font-weight: bold;}
+//   .custom-info {}
+//   .custom-info select {width: calc(100% - 46px); display: inline-block;}
+//   .custom-info .glyphicon {margin-left: 8px; font-size: 16px;vertical-align: middle;cursor: pointer;}
+//   .custom-info .glyphicon:hover {color: $appMedOrange;}
+//   // .custom-selectLicenses {}
+//   .custom-paymentAgreement {padding:20px; border: 2px solid $appMedLtGrey;}
+//   .custom-errorMsg {padding:20px;}
+//   .abInfo input {width: calc(100% - 30px); display: inline-block;}
+//   .abInfo .glyphicon {margin-left: 8px; font-size: 16px;vertical-align: middle;cursor: pointer;}
+//   .abInfo .glyphicon:hover {color: $appMedOrange;}
+
+  /************************* Step 4 table **************************/
+  .custom-businessModelTable {display:flex;padding:5px;/* transform: scale(0.8); */}
+  .custom-businessModelTable h4, .custom-businessModelTable h3 {margin:0; padding:0;text-align: left;}
+  .custom-tableRow {height:85px;display: flex;align-items: center;justify-content: center;}
+  .custom-tableRow .custom-tableAmmt {height:102px;}
+  .custom-tableRowLast {height: 188px;display: flex;align-items: center;/* justify-content: center; */margin-top: 28px;}
+  .custom-tableLeft {width:33.33%; padding:5px;}
+    .custom-leftTableColumn {width:100%;}
+    .custom-leftTableColumn .custom-tableRow {justify-content: left;}
+  .custom-tableRight {width:66.66%; padding:5px; }
+    .divTableBody {width:100%; display:flex;}
+      .divTableColumn {width: 25%;margin: 0 3px;text-align: center;padding: 0px;transition:1s;}
+      .divTableColumn:hover, .divTableColumn.custom-selectedPlan {background:$appBlue;color:$appWhite;transform: scale(1.02);}
+      .divTableColumn.custom-selectedPlan {cursor:default;}
+      .divTableColumn.custom-disablePlan {background: $appMedLtGrey; color:$appBorderGrey;}
+      .divTableColumn.custom-disablePlan .custom-tableAmmt, .divTableColumn.custom-disablePlan .custom-tableManager {background-color:$appBorderGrey!important;}
+      .divTableColumn fieldset {border: 2px solid transparent;padding: 4px;}
+        .divTableColumn legend {
+    display: block;
+    width: 100%;
+    margin-bottom: 6px;
+    font-size: 19.5px;
+    line-height: inherit;
+}
+      .divTableColumn.custom-BestValue fieldset {
+        margin: 0;
+        min-width: 0;
+        border: 1px solid $appBlue;
+        padding: 4px;
+      }
+      .divTableColumn.custom-BestValue legend {
+        display: block;
+        width: 100%;
+        margin-bottom: 6px;
+        background: #fbfb68;
+        font-size: 19.5px;
+        line-height: inherit;
+        color: $appBlue;
+        border: 1px solid;
+      }
+      .divTableColumn.custom-BestValue.custom-selectedPlan legend {background:transparent;color:$appWhite;border: 0;}
+      .divTableColumn.custom-BestValue.custom-selectedPlan .custom-tableAmmt.bg-primary,
+      .divTableColumn.custom-BestValue.custom-selectedPlan .custom-tableManager.bg-primary {border: 0px solid $appMedLtGrey; background:rgba(255, 255, 255, 0.28);}
+
+
+        .custom-tableTitle {font-size: 12px;}
+        .tablePlansFeatures {height:85px;margin-top: 38px;}
+        .custom-tableAmmt {height:85px;border-radius:15px;display: flex;align-items: center;justify-content: center;}
+          .custom-tableAmmtInner {border: 3px solid $appWhite;border-radius: 50px;height: 72px;width: 72px;color:$appWhite;font-weight: bold;display: flex;justify-content: center;align-items: center;}
+        .custom-tableProjectLimit, .custom-tableLimit {border-radius: 8px; padding: 15px 0px; border:1px solid $appMedLtGrey; font-size: 15px; width:100%; margin: 0 2px}
+        .custom-tableCheck {font-size: 28px; color:$appGreen;}
+        .divTableColumn .fa-times {color: #c50a0a;}
+        .custom-tableManager {border-radius: 11px;font-size: 15px;width: 100%;padding: 14.5px 0;color: $appWhite;}
+#custom-ecommerceWrapper input[type=checkbox], input[type=radio] {margin-right:7px;}
+/************************* views/company/signupPro/thankyou.html **************************/
+  .custom-thankYou {padding:25px;max-width:800px;margin:20px auto; text-align: justify;}
+
+  /**********************************************************/
+  /********************* MEDIA QUERIES **********************/
+  /**********************************************************/
+  @media only screen and (max-width: 1280px) { }
+  @media only screen and (max-width: 1024px) {
+    .custom-categoryTile {width: calc(33.33% - 20px);}
+   }
+  @media only screen and (max-width: 600px) {
+    .custom-categoryTile {width: calc(50% - 20px);}
+   }
+  @media only screen and (max-width: 768px) {
+    .custom-backBtn, .custom-nextBtn {text-align:center;}
+    .custom-backBtn button, .custom-nextBtn button {width:100%;margin-bottom: 15px;max-width: 320px;text-align: center;}
+    #signUpStep1 .custom-categoryCheckboxes:hover .custom-subCategoryCheckboxes {display:none;}
+   }
+  @media only screen and (max-width: 480px) {
+    .custom-categoryTile {width: 100%;}
+    .custom-signUpView {padding:0;}
+    #signUpLanding .container {box-shadow: none;}
+    #signUpComplete .custom-signInContainer {padding:0; box-shadow:none;}
+    .custom-signIn {margin: auto;height: 100vh;position: relative;padding: 0;}
+    .custom-selectedCategories .form-group .form-control {width: calc(100% - 35px);}
+
+div[ng-form="applicatonStep2"] md-radio-group {
+    width: 100%;
+    display: flex;
+    margin-top: 5px;}
+   }
+  @media only screen and (max-width: 320px) { }
+
+
+  @media only screen and (max-width: 959px) {
+    #signUpLanding .custom-signUpBox {margin-bottom:50px;}
+    #signUpLanding .container .col-md-6 {width:100%;}
+    .hr-text {display: none;}
+  }
+
+
+  /*********************** RESPONSIVE Media Sizes ***********************/
+  /************* BOOTSTRAP SIZES ********************/
+  /****** Medium Devices *****/
+  @media screen and (max-width:1200px) {
+
+  }
+  /****** Small Devices *****/
+  @media screen and (max-width: 992px) {
+
+  }
+  /****** Extra Small Devices/ iPad *****/
+  @media screen and (max-width: 768px) {
+
+  }
+
+  /************* OTHER SIZES ********************/
+  /****** Medium Devices *****/
+  @media screen and (max-width: 1100px) {
+
+  }
+  /****** iPhone 5 *****/
+  @media screen and (max-width: 568px) {
+
+  }
+  /****** iPhone 4 *****/
+  @media screen and (max-width: 480px) {
+  .custom-min480 {display:none;}
+  form[name="gpSignInForm"] {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  }
+  @media screen and (max-width: 320px) {
+
+  }
+
+  /*****************************************************************************************************************/
+  /********************************************* CONSULTANT SignUp *************************************************/
+  /*****************************************************************************************************************/
+
+/*************************** NEW 1.19.18 *****************/
+
+#signUpLanding .custom-statusBarCompany {display: none;}
+#signUpLanding .custom-statusBarCompany.showCompanyStatusBar {display: block;}
+#signUpLanding .custom-statusBarConsultant {display: none;}
+#signUpLanding .custom-statusBarConsultant.showConsultantStatusBar {display: block;}
+
+.custom-bulletedStatusBar {display:flex;justify-content:center;padding-bottom: 15px;padding-top: 6px;}
+ .custom-bullets {height: 30px; width:30px; border-radius:50%;display: flex;flex-direction: column; justify-content: center; background-color:$appWhite; color:$appBlue;}
+ .custom-bullets.completed {height: 30px; width:30px; border-radius:50%; display: flex;flex-direction: column; justify-content: center; background-color:#fd7b20;color:$appWhite;}
+ .custom-statusBarLinks {height:30px; width:150px;display: flex;flex-direction: column; justify-content: center;}
+ .custom-statusBarLinks > div {height:5px; background-color:#7a7a7a;}
+
+  @media screen and (min-width: 768px) {
+      .signUpAllowedAccessHeaderLI {padding:29px;}
+  }

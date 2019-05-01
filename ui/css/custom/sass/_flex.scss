@@ -1,0 +1,19 @@
+// flexbox
+.custom-flex {display: flex;}
+.custom-flex-wrap {display: flex; flex-wrap:wrap;}
+.custom-flex-column {display: flex; flex-direction: column;}
+.custom-alignFlexCenter {align-items: center;}
+.custom-alignFlexEnd {align-items: flex-end;}
+.custom-justifyFlexSpaceBetween {justify-content: space-between;}
+.custom-justifyFlexSpaceAround {justify-content: space-around;}
+.custom-justifyFlexSpaceEvenly {justify-content: space-evenly;}
+.custom-justifyFlexCenter {justify-content: center;}
+.custom-justifyFlexEnd {justify-content: flex-end;}
+.custom-flex-grow-1 {flex-grow: 1;}
+
+//Non flex
+.floatRight {float:right;}
+//Toolbars
+.custom-toolbarFlex {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;align-items: center;align-content: center;width: 100%;}
+.custom-flexJustify {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;align-items: center;align-content: center;width: 100%;}
+.custom-flexStart {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-start;align-items: center;align-content: center;width: 100%;}

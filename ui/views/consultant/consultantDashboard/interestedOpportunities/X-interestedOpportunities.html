@@ -1,0 +1,61 @@
+<div class="custom-systemNotificationsWrapper">
+  <div class="custom-interestedOpportunities md-whiteframe-2dp">
+    <div>
+      <div class="panel-heading">
+        <div>Opportunities</div>
+        <div class="custom-readNotification">
+          <div class="custom-hideShowMsgs"><span  ng-hide="readMsgsVisible" ng-click="loadReadMsgs()"> Show Read Notifications</span></div>
+          <div class="custom-hideShowMsgs"><span  ng-show="readMsgsVisible" ng-click="hideReadMsgs()"> Hide Read Notifications</span></div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div>
+          <ul class="collapsible popout" data-collapsible="accordion" >
+            <li ng-repeat="project in publicProjects" ng-init="initializeCollapse()">
+              <div class="collapsible-header">
+                <div>
+                  <i class="fa fa-lightbulb"></i>
+                  <span><strong>{{project.title}}</strong><span ng-if="project.agency.name"> - {{project.agency.name}}</span></span>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div><h4><strong>Project:</strong> {{project.title}}</h4></div>
+                <div ng-if="project.agency.name">
+                  <div><strong>Agency:</strong> {{project.agency.name}}</div>
+                </div>
+                <div ng-if="!project.agency.name">
+                  <div><strong>Agency:</strong> None</div>
+                </div>
+                <div>
+                  <div><strong>Description:</strong></div>
+                  <div>{{project.description}}</div>
+                </div>
+                <div>
+                  <div>
+                    <strong>Work on site required?</strong>
+                    <span ng-if="project.workOnSiteRequired">Yes</span>
+                    <span ng-if="!project.workOnSiteRequired">No</span>
+                  </div>
+                </div>
+                <div><h4><strong>Categories:</strong></h4></div>
+                <div >
+                  <div ng-repeat="category in project.Categories">
+                    <div style="margin-bottom:3px;"><strong>{{category.name}}:</strong></div>
+                    <div class="label label-default label-outline custom-expertSkillsLabel" style="font-size:13px;" ng-repeat="subCat in category.subCategories">
+                      {{subCat.name}}
+                    </div>
+                  </div>
+                  <!-- <div ng-if="fav.skills.length > 3"><a href="#" ng-click="showFullConsultantDetailsModal($event, fav)">{{fav.skills.length - 3}} More</a></div> -->
+                </div>
+                <div class="custom-collapsable-footer">
+                  <div ng-click="openIOSendMsgModal(project)"><i class="fa fa-paper-plane"></i> &nbsp; Send Message</div>
+                </div>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

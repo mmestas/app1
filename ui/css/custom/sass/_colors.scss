@@ -1,0 +1,50 @@
+//CompanyNme Colors
+$appBlue: #2e7392;
+$appBlueHover: darken( $appBlue, 5% );
+$appDkBlue: darken( $appBlue, 17% );
+$appLtBlue: lighten( $appBlue, 42% );
+// $appMdBlue: lighten(desaturate($appBlue, 7.26), 22.55);
+// $appMdBlue: lighten(desaturate($appBlue, 7.25), 22.5);
+$appMdBlue: lighten(desaturate(#2e7392, 5.19), 27.65);
+
+$materializeBlue: #2196F3;
+
+$appOrange: #fd8623;
+$appMedOrange: #f89f35;
+$appHoverOrange: #e47517;
+$appLogoOrange: #da5f10;
+
+$appGold: #ffd700;
+$appStarGold: #ffd400;
+$appStarGoldDk: #e6c001;
+$appStarGoldLt: #ffe500;
+
+$appGreen: #76c176;
+
+$appExDkGrey: #2f2f2f;
+$appDkGrey: #444444;
+$appMdDkGrey: #575757;
+$appGrey: #656565;
+
+$appMedGrey: #757575;
+$appMedLtGrey: #c5c5c5;
+$appLtGrey: #cccccc;
+$appLtGrey2: #f6f6f6;
+$appGreyBG: #ebebeb;
+$appBorderGrey: #eeeeee;
+$appBorderMdGrey: #a7a7a7;
+$appSilver: silver;
+$appPlatinum: #e5e4e2;
+
+
+$appLtGreyBlue: #acb6c0;
+$appMdGreyBlue: #a8bec7;
+$appMedLtBorderGrey: #dce4ec;
+$appLtBorderGrey: #e9eef3;
+
+$appWhite: #ffffff;
+
+$appDangerRed: #D1241B;
+
+// $appLtGreyBlue: #b3b9bf;
+// $appGreyBlue: ;

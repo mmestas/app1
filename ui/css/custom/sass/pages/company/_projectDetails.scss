@@ -1,0 +1,276 @@
+/********************** DASH DETAILS - HEADER *****************/
+  .custom-projectDetailsHeaderSection {
+    display: flex;
+    .custom-projectDetailHeader {
+      display:flex;
+      padding:10px;
+      margin: 10px 5px;
+      font-size: 0.85em;
+      background: transparent;
+      flex-grow: 1;
+      border: 1px solid #c5d4e2;
+      background: #d7e0e9;
+
+      .custom-smallerText {font-size: 18px;}
+      div.btn-primary {
+        font-size: 12px; width:100%;
+        .badge {font-size: 11px; min-width: 2em; padding: 2px 6px 0; }
+      }
+      .custom-projectListItem-badges {
+        padding: 0 15px;border-right: 1px dashed $appMedGrey;border-left: 1px dashed $appMedGrey;margin-right: 20px;
+        span.badge {
+          min-width: 2.5rem;padding: 0px 6px 0px;text-align: center;font-size: 12px;
+        }
+      }
+      .form-control {padding: 7px;height: 33px;font-size: 12px;}
+    }
+  }
+
+/********************** DASH DETAILS - VIEW PROJECT *****************/
+
+/********************** DASH DETAILS - PROJECT OVERVIEW *****************/
+.custom-projectOverview {
+  display:flex; padding:10px; background: transparent;
+  .row {border-bottom:1px dashed #eaeaea; margin-bottom:15px;}
+  .form-group {
+    label {color: $appBlue;}
+    div {border-bottom: 0px solid;padding-bottom: 2px;border-color: #e0e0e0;margin-top: 0;color: $appDkGrey;}
+  }
+  .custom-projectKeywords {
+    width: 100%;
+    padding: 0 3px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 0px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .keywordBubble {
+      background-color: transparent;
+      color: $appDkGrey;
+      padding: 1px 7px;
+      border-radius: 13px;
+      font-size: 14px;
+      border: 0;
+      text-align: center;
+      height: unset;
+      margin: 11px 2px 11px 2px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      i.fa {margin-left:6px;}
+      span.addedKeyword {width: max-content;}
+    }
+  }
+  .custom-categoriesList {
+    .custom-categoriesUL {
+      display:flex; flex-wrap:wrap;
+      > li {
+        margin-right:18px; margin-bottom:18px; border-right: 1px dashed #e0e0e0;padding-right: 18px; font-size:14px;
+        ul {
+          li {font-size:13px; margin-left:0px;list-style-type: disc;}
+        }
+      }
+      > li:last-child {border-right: 0;}
+    }
+  }
+}
+
+/********************** DASH DETAILS - EDIT PROJECT *****************/
+.custom-editProject, .custom-duplicateProject {
+  font-size: 14px;
+  .radioColumn {display:flex; flex-direction: column;}
+  md-radio-button {display: inline-block; margin-left: 15px;}
+  md-checkbox {margin:0;}
+  project-file-upload md-input-container .md-input {border: 0; }
+  project-file-upload md-input-container.md-input-focused .md-input {border:0;}
+  md-autocomplete {
+    md-input-container {
+      input {
+        width: 100%;
+        height: 45px;
+        padding: 10px 15px;
+        margin-top:5px;
+        background-color: white;
+        border: 1px solid $appMedGrey;
+        border-radius: 0px;
+        -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      }
+    }
+  }
+   md-autocomplete[md-floating-label] {
+     .md-show-clear-button {
+       button {
+         top:8px;
+       }
+     }
+   }
+  .custom-projectEditCategories {
+    display:flex; flex-wrap:wrap;
+    > li {
+      margin-right:10px;margin-bottom:15px;
+      > div {
+        margin-bottom: 10px;
+        > span {
+          font-weight:600; margin-right:5px;
+        }
+      }
+      ul {
+        li {
+          font-size: 13.5px;
+        }
+        li.list-group-item:hover {background: $appLtBlue;}
+      }
+    }
+  }
+
+}
+
+
+.custom-editProject md-input-container .md-placeholder,
+.custom-editProject md-input-container label:not(.md-no-float):not(.md-container-ignore),
+.custom-duplicateProject md-input-container .md-placeholder,
+.custom-duplicateProject md-input-container label:not(.md-no-float):not(.md-container-ignore) {bottom: 60px;bottom: 68%;left: 15px;}
+.custom-editProject md-input-container.md-input-focused label:not(.md-no-float),
+.custom-editProject md-input-container.md-input-has-placeholder label:not(.md-no-float),
+.custom-editProject md-input-container.md-input-has-value label:not(.md-no-float),
+.custom-duplicateProject md-input-container.md-input-focused label:not(.md-no-float),
+.custom-duplicateProject md-input-container.md-input-has-placeholder label:not(.md-no-float),
+.custom-duplicateProject md-input-container.md-input-has-value label:not(.md-no-float)  {bottom: 75px;left: 0px; display:none;}
+
+
+.custom-editProject md-autocomplete[md-floating-label] md-input-container,
+.custom-duplicateProject md-autocomplete[md-floating-label] md-input-container {margin-top:-7px;}
+
+.custom-projectDetailsSection md-input-container .md-errors-spacer {display:none;}
+
+
+/********************** DASH DETAILS - FIND EXPERTS *****************/
+//This may not be used NOTE: Don't erase until sure
+ // #custom-Experts {
+ //   .custom-sideSectionRow {
+ //     select.input-sm {font-size: 11px;}
+ //     button.btn-sm {width:100%; font-size: 11px;}
+ //   }
+ //   .custom-collapse.custom-in {padding:5px;}
+ // }
+
+ #custom-appProRating {}
+ #custom-KeySearch {padding:5px;}
+ #custom-appProCategory {}
+ #custom-appProRating md-radio-button {display: inline-block;}
+
+ .custom-sideSectionRow {padding:0; margin:0}
+ .custom-filterInputs {padding-left: 3px; padding-right: 3px;}
+   .custom-filterInputs .fa-save {font-size: 37px; color: #545453;margin-top: -3px;}
+   .custom-filterInputs .glyphicon-floppy-disk {font-size: 35px; color: #545453;}
+   .custom-filterInputs .form-group {margin-bottom:10px;}
+   .custom-apply {text-align: right;min-width: 118px;}
+   .custom-total {margin: 0; font-weight: 600;}
+ .custom-expertSearchFilters {background: white;border: 1px solid $appBorderGrey;padding: 10px;
+   .panel {margin-bottom:4px;border-radius: 0;
+     .panel-heading {border-radius: 0;padding: 12px;}
+   }
+ }
+ // .custom-expertSearchFilters .panel {margin-bottom:4px;border-radius: 0;}
+ // .custom-expertSearchFilters .panel .panel-heading {border-radius: 0;padding: 12px;}
+
+ .custom-expertSearchResults {background: transparent;padding:10px;
+   .panel {margin-bottom:4px;border-radius: 0;
+     .panel-heading {border-radius: 0;padding: 12px;}
+   }
+ }
+ .custom-FilterTitle {font-size: 15px;font-weight: 300;}
+ .custom-filterPanel {padding: 8px;}
+ .custom-addedFilters {
+   padding: 0 5px; margin: 0 5px; flex-grow:1;
+    button {margin-bottom:5px;}
+    button.btn-xs {margin-bottom:5px; border:1px solid $appMedLtGrey;}
+    button.btn-xs i.fa{margin-left:3px;}
+ }
+ .filterResultsOn {width:130px;
+   label {font-size:12px; width:130px;}
+   button.dropdown-toggle {width:130px; padding:2px 10px 2px 2px; position:relative; min-height: 24px;
+     .caret {position: absolute;right: 3px;top: 43%;}
+   }
+   ul.custom-sortFilterList {margin-top: -5px; padding: 5px 7px; min-width: 105px; border-top-left-radius: 0; border-top-right-radius: 0;
+   }
+ }
+.resultsFilters {align-items: flex-end;
+  .custom-clearAllBtn {width:145px;}
+  .dwnldResults {width:130px;}
+}
+
+ .custom-clearAllBtn {width:100%;}
+ .custom-extendedBtns {display: none;}
+ .custom-extendedBtns .btn {width: 50%;display: inline-block;font-size: 11px;padding: 6px 2px;}
+ .custom-addToBenchBtn .btn.btn-default {color: $appDkBlue;color: $appBlue;}
+ .custom-addToBenchBtn:hover .custom-extendedBtns {display: flex;width: 100%;}
+ .custom-addToBenchBtn:hover .custom-hoverBtn {display:none;}
+ .custom-addToFavBtn .btn.custom-addedTo,
+ .custom-addToShortListBtn .btn.custom-addedTo,
+ .custom-addToBenchBtn .btn.custom-addedTo
+     {background: #dadada;border-color:#dadada;color: #afafaf;}
+ .custom-addToFavBtn .btn.custom-addedTo:hover ,
+ .custom-addToShortListBtn .btn.custom-addedTo:hover ,
+ .custom-addToBenchBtn .btn.custom-addedTo:hover {background: white;color: $appBlue;border-color: $appBlue;}
+ .showRemove {display:none;}
+
+ .custom-addToFavBtn .btn.custom-addedTo:hover .showRemove,
+ .custom-addToShortListBtn .btn.custom-addedTo:hover .showRemove,
+ .custom-addToBenchBtn .btn.custom-addedTo:hover .showRemove
+ {display:block;}
+ .custom-addToFavBtn .btn.custom-addedTo:hover .hideRemove,
+ .custom-addToShortListBtn .btn.custom-addedTo:hover .hideRemove,
+ .custom-addToBenchBtn .btn.custom-addedTo:hover .hideRemove
+ {display:none;}
+
+
+ .custom-expertsList {padding: 7px;background: white;border: 1px solid $appBorderGrey;border-bottom: 0;display: flex;}
+ .custom-expertsList:last-child {padding: 7px;background: white;border: 1px solid $appBorderGrey;}
+ .custom-expertPicLinks {display: flex;flex-direction:column;justify-content: center;align-items: center;align-content: center;padding: 3px;min-width: 150px;background: transparent;}
+   .custom-expertPic {margin-bottom: 8px;width: 100%;height: 110px;max-width: 110px;position: relative;}
+   .custom-expertPic img {width:100%;border-radius: 100px;height: 100%;}
+   .custom-expertPicLinks button {width:100%;}
+   .custom-addToFavBtn {width:100%;margin-bottom:5px;}
+   .custom-addToShortListBtn {width:100%;margin-bottom:5px;}
+   .custom-addToBenchBtn {width:100%;margin-bottom:5px;}
+   .custom-unlockMsg {font-style: italic;}
+   .custom-addToBenchBtn.custom-doubleBtns {display:flex;}
+   .custom-addToBenchBtn.custom-doubleBtns button {width:50%; font-size:10px;}
+   .custom-addToBenchBtn.custom-doubleBtns button:first-child, .custom-addToBenchBtn.custom-doubleBtns button:nth-child(2) {margin-right:3px;}
+
+   .custom-topFavShortBenchBtns {text-align: right;margin-bottom: 10px;}
+
+ .custom-expertInfo {padding: 3px 12px;background: transparent;}
+   .custom-expertName {}
+ #findExperts .custom-expertName:hover > div:first-child {text-decoration: underline;cursor: pointer;}
+
+   .custom-expertCo {
+   color: $appGrey;
+}
+   .custom-expertAddress {font-size:14px;}
+   .custom-expertDescription {margin-top:10px; font-size:14px;}
+   .custom-expertDescription span[ng-click] {color:$appBlue;text-decoration:underline;}
+   .custom-expertSkills {margin-bottom:8px;display:flex; align-items:center; margin-top:10px;font-size:13px;}
+     .custom-expertSkillsLabel {margin-right: 5px !important;width: 115px;text-overflow: ellipsis;overflow: hidden;display: inline-block;padding: 2px !important;transition: 0.3s;}
+     .custom-expertSkillsLabel:hover {width:auto;min-width: 115px;padding: 2px 8px !important;cursor: default;}
+     .custom-expertAgencies {margin-right: 5px;}
+   .custom-expertDeptLogos {margin-top:10px; font-size:13px;}
+   .custom-expertDeptLogos img {/* width:50px; */height: 40px;}
+ .custom-expertRating {padding:3px;display: flex;flex-direction:column;align-items: flex-end;background: transparent;font-size: 13px;}
+ #custom-appProCategory md-checkbox.custom-starCheckbox {margin-left: 0px;margin-right: 0;margin-bottom: 5px;min-width: 15px;width: 20px;}
+ #custom-appProCategory md-checkbox.custom-catCheckbox {margin-bottom: 5px;margin-left:0px;}
+ #custom-appProCategory md-checkbox.custom-subCatCheckbox {margin-left: 20px;margin-bottom: 2px;}
+ #custom-appProCategory md-checkbox .md-label {line-height: 1.3; font-size: 12px;}
+ #custom-appProCategory .md-label {line-height: 1.3; font-size: 12px;}
+
+ #custom-appProCost md-checkbox.custom-costCheckbox {margin-top:5px; margin-bottom: 2px;}
+ #custom-appProCost article.custom-slider {}
+
+ #custom-SecurityClearance md-checkbox.custom-catCheckbox {margin-bottom: 5px; margin-left:0px;}
+ #custom-SecurityClearance md-checkbox .md-label {font-size: 13px;}
+
+.md-dialog-content md-tabs.md-dynamic-height md-tabs-content-wrapper {/* padding:7px; */}

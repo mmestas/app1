@@ -1,0 +1,8 @@
+<div class="custom-nav" company-dash-header></div>
+<div class="custom-dashWrapper custom-companyProfileForm custom-mainBodyWidth" ng-init="companyProfileInit()">
+  <div class="custom-dashInner">
+    <div id="custom-companyProfile" class="md-whiteframe-2dp" ng-include="'/views/company/companyProfile/displayCompanyProfile.html'" ng-hide="viewEditProfile || viewEditUsers"></div>
+    <div id="custom-editCompanyProfile"  ng-include="'/views/company/companyProfile/editCompanyProfile.html'" ng-show="viewEditProfile"></div>
+    <div id="custom-editCompanyUsers"  ng-include="'/views/company/companyProfile/manageAcctUsers/manageAcctUsers.html'" ng-show="viewEditUsers"></div>
+  </div>
+</div>

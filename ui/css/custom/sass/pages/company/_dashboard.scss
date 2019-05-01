@@ -1,0 +1,662 @@
+
+.custom-dashWrapper {padding-top: 70px;width:100%; }
+.custom-dashWrapper md-toolbar.md-hue-custom {margin-top: 0;}
+/******************************** HEADER ******************************/
+.custom-flexSpaceBetween {justify-content: space-between;}
+.custom-flexSpaceAround {justify-content: space-around;}
+
+/*********************************** NEW DASHBOARD *********************************/
+#companyDashboard {}
+#companyDashboard md-tabs {max-width:1200px; width:100%; margin:auto;}
+
+#companyDashboard md-tabs .row {margin:0;display: flex;}
+#companyDashboard md-tabs.arrow-steps[md-border-bottom] > md-tabs-wrapper {margin:5px;}
+#companyDashboard  md-content {margin: 5px;margin: -10px;}
+#companyDashboard .dash-right-column .custom-companyDashboardSystemNotifications .panel-heading > div {
+  display:flex; justify-content:space-between; align-items:center;
+}
+/****************** ADDED 6.13.18 ********************/
+.custom-systemNotificationsWrapper md-tab-content.md-no-scroll {
+    overflow-x: visible;
+    overflow-y: visible;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+#companyDashboard > .panel-default > .panel-heading { color: $appBlue; background-color: white; border-color: $appLtBorderGrey;}
+#companyDashboard .collapsible-header {
+  display: block;
+  cursor: pointer;
+  height: 60px;
+  line-height: 19px;
+  padding: 5px 10px;
+  background-color: white;
+  color: $appBlue;
+  font-weight: 500;
+  font-size: 17px;
+}
+  #dashTab-Projects {}
+    .dash-left-column {background: $appMedLtGrey; padding:15px;}
+      .dash-companyOverview {padding: 15px 0;font-size:14px;padding: 12px;background: $appMedGrey; color:#bed3dc;}
+      .custom-greyBG .dash-companyOverview.md-whiteframe-2dp,
+      .dash-companyOverview.custom-greyBG .md-whiteframe-3dp {background: $appMedGrey;}
+      .dash-companyOverview h3, .dash-companyOverview h4, .dash-companyOverview h5 {color:white;font-weight:500;font-size:17px; margin:0;}
+      .dash-companyOverview > div {margin-bottom:10px;}
+    .dash-right-column {padding:15px;}
+      .custom-companyLogo {text-align:center; display: flex;flex-direction: column;justify-content: center;align-items: center;}
+      .custom-companyLogo img {max-width: 100%;max-height: 185px;}
+  #dashTab-Search {}
+  #dashTab-Engagements {}
+  #dashTab-AcceptPay {}
+
+#dashboardProjects .list-group-item h4 {font-size: 16px;}
+#dashboardProjects md-tabs.md-dynamic-height md-tabs-content-wrapper {
+    margin-bottom: 27px;
+}
+.custom-dashProjectLinks {margin-bottom: 15px;}
+.custom-dashProjectLinks span {margin-right:10px;}
+.custom-dashProjectLinks span.active {color:$appBlue;text-decoration: underline;}
+
+.custom-actions {}
+select.custom-actions {
+    font-family: FontAwesome, sans-serif;
+    padding: 0;
+    border: 0;
+    height: 30px;
+    background: transparent;
+    font-family: Font Awesome\ 5 Free, sans-serif;
+    font-size: 19px;
+    color: $appBlue;
+    }
+
+select.custom-actions option  {font-size: 13px;}
+select.custom-actions option:first-child  {font-family: FontAwesome, sans-serif; font-family: Font Awesome\ 5 Free, sans-serif; font-size: 16px;color: $appBlue;}
+
+/*************** Dashboard take 5 **********************/
+.ng-table th.sortable.sort-asc, .ng-table th.sortable.sort-desc,
+.ng-table .ng-table-group-header th {
+    background-color: $appBlue;
+    text-shadow: none;
+    color: white;
+    background: white;
+    color:$appBlue;
+}
+.ng-table th a {color:white;}
+.ng-table .ng-table-group-header th a {color:$appBlue;}
+.ng-table th .list-group a {color:  $appBlue;}
+.ng-table th.sortable .sort-indicator {font-weight: 300;}
+
+td.custom-status label {
+  width: 100%;
+    text-align: center;
+    border-radius: 2px;
+}
+.ng-table-sort-header {background: $appBlue;color: white;}
+.ng-table>thead>tr>th,
+.ng-table>tbody>tr.tableCustomWidths>td {}
+  .ng-table .ng-table-group  a:not(.btn) {text-decoration: none;}
+/******************************** DASH LANDING ******************************/
+#sidebar {padding: 0 15px;}
+#sidebar .list-group-item {border-radius: 0;}
+#companyDashboard #sidebar {padding: 12px 12px;}
+#companyDashboard .custom-mainBodyWidth {}
+.custom-dashActiveProject {background: $appBlue;color: white;}
+.custom-dashActiveProject select {color:white;}
+.custom-dashActiveProject select.custom-actions option {color:$appMedGrey;}
+.custom-dashActiveProject h5,.custom-dashActiveProject h4 {color:white;}
+.custom-dashActiveProject h5 small,.custom-dashActiveProject h4 small {color:white;}
+.dash-projectHeader {background: $appBlue;display:flex; padding: 10px;}
+.dash-projectHeader h4 {color:white;margin:0;font-size: 14px;}
+.custom-dashInner {padding-top:40px;}
+.custom-dashLeftColumn {width:250px;padding:10px; background: rgba(233, 30, 99, 0.13);}
+.custom-dashBody {width:calc(100% - 250px);padding:10px 20px;background:rgba(128, 0, 128, 0.28);}
+
+.list-group-item {margin-left:0;padding: 10px 10px;font-size: 85%;}
+.list-group-item.custom-companyDashInnerEngagements {padding: 10px 15px 10px 30px;}
+.list-group-item h5, .list-group-item h4 {margin:0;}
+.list-group-item .fa {font-size: 16px;}
+
+
+.dash-projectQuotes .btn.dropdown-toggle {padding:0;width: 65px;background: transparent;text-align: left;}
+.dash-projectQuotes ul.dropdown-menu {width: 80px;max-width: 80px;min-width: unset;padding: 5px;box-shadow: none;border-radius: 0;}
+.dash-projectQuotes li:hover {background: $appBorderGrey;}
+  /******************** LEFT MENU ***************/
+  // .custom-leftMenuUL {list-style-type: none;}
+  // .custom-leftMenuUL li {font-size: 18px;}
+  // .custom-leftMenuUL li a:hover {text-decoration: none;}
+  .custom-catTrue {}
+  .custom-catFalse {}
+    md-checkbox:not([disabled]).md-gpSolidInfo.custom-catTrue.md-checked .md-icon {}
+    md-checkbox:not([disabled]).md-gpSolidInfo.custom-catFalse.md-checked .md-icon {}
+  /******************** DASH BODY ***************/
+  .custom-companySnapshot {display:flex;justify-content: space-between;flex-wrap: wrap;}
+  .custom-companySnapshotData h4 {font-weight: 600;}
+  .custom-companyInfo {display:flex; justify-content: flex-start; align-items: center;}
+  .custom-companyDashLogo {width: 165px;}
+  .custom-companyAddress {margin-left:15px;}
+  .custom-companyAddress h2 {margin:0;}
+  .custom-dashTile {border: 2px solid $appGrey; border-radius: 4px;padding: 0 15px;margin-bottom: 20px; position:relative; max-width: 320px;  max-height: 320px;  margin: 0 auto 20px;}
+  .custom-dashTile h2 {text-align: center;color: white;font-weight: bold;}
+  .custom-tileNumber {font-size:55px; font-weight:bold;text-align: center;color: $appDkGrey;}
+  .custom-tileStarRating {text-align: center;}
+  .custom-tileNumWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  @media screen and (max-width: 1024px) {
+    .custom-nav {display: none;}
+    .custom-dashToolbar {display: none;}
+  }
+
+/********************** DASH My Projects *****************/
+
+/******************************** Table ******************************/
+table.custom-listTable > thead > tr, table.custom-listTable > tbody > tr {display:flex;flex-wrap:wrap;margin-bottom:7px;align-items: center;border:1px solid transparent;transition: 0.3s;}
+table.custom-listTable > tbody > tr:hover {border-color: $appBlue;box-shadow: 0 1px 5px 0 lighten( $appBlue, 40% ), 0 2px 2px 0 lighten( $appBlue, 40% ), 0 3px 1px -2px lighten( $appBlue, 40% );transform: scale(1.01) translate(0);}
+table.custom-listTable > tbody > tr i.fa {transition: 0.7s;font-size: 22px;}
+table.custom-listTable > tbody > tr:hover i.fa {opacity: 1;color: $appBlue;}
+table.custom-listTable.table > thead > tr > th {text-align: left; padding:0; color:$appMedGrey;}
+table.custom-listTable > thead > tr > th:nth-child(1),
+table.custom-listTable > thead > tr > th:nth-child(2),
+table.custom-listTable > thead > tr > th:nth-child(3) {padding-right:5px;}
+table.custom-listTable > thead > tr > th:nth-child(1), table.custom-listTable > tbody > tr > td:nth-child(1){flex-grow:1;max-width: 550px;width:100%;}
+table.custom-listTable > thead > tr > th:nth-child(2), table.custom-listTable > tbody > tr > td:nth-child(2){max-width: 258px;width:100%;}
+table.custom-listTable > thead > tr > th:nth-child(3), table.custom-listTable > tbody > tr > td:nth-child(3){max-width: 160px;width:100%;}
+table.custom-listTable > thead > tr > th:nth-child(4), table.custom-listTable > tbody > tr > td:nth-child(4){max-width: 230px; width:100%;}
+
+table.custom-listTable > tbody > tr > td:nth-child(4) {display:flex; justify-content: space-between;}
+table.custom-listTable > tbody > tr > td h5 {/* font-weight: 600; */max-width:565px;margin-left: 10px;}
+table.custom-listTable label {width: 100%;text-align: center;border-radius: 3px;padding: 7px 18px 7px;margin: 0;}
+table.custom-listTable img, table.custom-listTable .custom-initialsLogo {height:35px; width:35px; min-width:35px;}
+table.custom-listTable td[title="'Project'"] > div {display: flex; align-items: center;}
+.ng-table th.filter .input-filter {height: 32px; font-weight: 300;}
+
+@media screen and (max-width: 1024px) {
+   table.custom-listTable > thead > tr > th:nth-child(1), table.custom-listTable > tbody > tr > td:nth-child(1){width:100%}
+   table.custom-listTable > thead > tr > th:nth-child(2), table.custom-listTable > tbody > tr > td:nth-child(2){max-width: 100%; width:100%;}
+   table.custom-listTable > thead > tr > th:nth-child(3), table.custom-listTable > tbody > tr > td:nth-child(3){max-width: 100%; width:100%;}
+   table.custom-listTable > thead > tr > th:nth-child(4), table.custom-listTable > tbody > tr > td:nth-child(4){max-width: 100%; width:100%;}
+ }
+
+ @media screen and (max-width: 992px) {
+ }
+ @media screen and (max-width: 768px) {
+
+ }
+ @media screen and (max-width: 667px) {
+ }
+ @media screen and (max-width: 568px) {
+
+ }
+ @media screen and (max-width: 480px) {
+ }
+
+
+table .fa-chevron-circle-right {font-size: 22px;color: $appBlue}
+table .fa-chevron-right {font-size: 22px;color: $appBorderGrey}
+/******************************** UL LI ******************************/
+.custom-listGroup {}
+.custom-listGroup .badge {font-size: .9em; min-width: 2rem;}
+.custom-listItem {padding: 10px 5px;margin:0;border: 1px solid $appBorderGrey;margin-bottom: 12px;background: white;font-size: 13px;min-height: 120px;display: flex;}
+.custom-listItem:hover {border-color: $appBlue;box-shadow: 0 1px 5px 0 lighten( $appBlue, 14% ), 0 2px 2px 0 lighten( $appBlue, 14% ), 0 3px 1px -2px lighten( $appBlue, 12% );}
+.custom-listItem:hover .fa-chevron-right {color:$appMedGrey;}
+.custom-listItem:after, .custom-listItem2:after {font-family: FontAwesome;content: "\f105";width: 25px;font-size: 24px;padding: 0 10px 0 10px;display: flex;color: $appMedLtGrey;align-items: center;justify-content: center;}
+.custom-listItem:hover:after, .custom-listItem:hover:after {color:$appBlue;}
+.custom-listBtn {min-width: 230px;text-align: center;padding: 0 5px;display: flex;flex-direction: column;align-items: center;}
+.custom-listBtn button {width: 100%; margin-bottom: 10px;}
+.custom-listBtn button:last-of-type {margin-bottom: 0;}
+
+.custom-listInfo {padding: 0 5px;flex-grow:1;}
+.custom-listInfo h3 {padding-top:5px;font-size: 1.5em;margin-bottom: 3px;}
+.custom-listIcon {padding: 0 5px;text-align: center;width:125px;display: flex;align-items: center;margin-right: 5px;}
+.custom-agencyIcon {width: 100%;height: 100%;border-radius: 50%;}
+.custom-list-chevron {display: flex;align-items: center;font-size:20px;color:#eaeaea;width: 25px;padding: 0 30px;}
+
+
+.custom-listItem2 {display:none; padding: 10px 5px;margin:0;border: 1px solid $appBorderGrey;margin-bottom: 12px;background: white;font-size: 13px;min-height: 120px;}
+.custom-projectListItem-image {width: 100px;height: 100px;display: flex;flex-direction: column;justify-content: center;padding:5px;}
+.custom-projectListItem-description {flex-grow: 1; padding:5px;}
+.custom-projectListItem-description h3 {margin:0; padding:0;}
+.custom-projectListItem-badges {padding: 0 15px; margin-right: 20px;}
+.custom-projectListItem-badges  div {margin-bottom:3px;}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .test-image {width: 85px; min-width: 85px;}
+}
+@media screen and (max-width: 667px) {
+}
+@media screen and (max-width: 568px) {
+  .custom-listItem2 {display:flex;}
+  .custom-listItem {display: none;}
+}
+@media screen and (max-width: 480px) {
+}
+
+
+@media screen and (max-width: 990px) {
+  .custom-projectDetailHeader {flex-wrap:wrap;}
+  .custom-listBtn {width: 100%;}
+  .custom-listInfo {width: 100%;}
+  .custom-listIcon {width: 100%;}
+}
+@media screen and (max-width: 767px) {
+  .custom-listInfo {text-align: center;}
+}
+
+/********************** DASH My Projects DETAILS *****************/
+.custom-detailWrapper {width:100%;padding: 70px 0;}
+
+.custom-panelSection {padding:0;padding-top: 15px;padding-top: 0;}
+.custom-panelSection .custom-collapse {padding:4px 7px;}
+.custom-panelTitle {font-size: 20px;font-weight: 700;}
+.custom-panelTitle .fa-chevron-circle-down, .custom-panelTitle .fa-chevron-circle-up {font-size: 25px;}
+.custom-collapse {display: none;-webkit-transition: 1s; -moz-transition: 1s; -o-transition: 1s; transition: 1s;}
+.custom-collapse.custom-in {display: block;-webkit-transition: 1s; -moz-transition: 1s; -o-transition: 1s; transition: 1s;}
+ .custom-collapse.custom-in:hover {
+
+ }
+
+
+
+/* changed this on 4.10.18 Due to border on consultant profile edit references*/
+md-input-container.md-input-resized .md-input, md-input-container .md-input.ng-invalid.ng-dirty,
+md-input-container.md-input-resized .md-input,
+md-input-container .md-input.ng-invalid.ng-dirty {}
+
+.custom-innerTab {padding-left:0; padding-right:0;}
+/* .arrow-steps  md-tab.step  div.custom-innerTab {padding-left:0; padding-right:0;} */
+.arrow-steps > md-tabs-content-wrapper > md-tab-content {margin-top: 15px;}
+.arrow-steps md-tabs-canvas {
+    height: 40px;
+}
+
+.arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper {  height: 40px; width: 100%;}
+md-tabs.arrow-steps[md-border-bottom] > md-tabs-wrapper {
+    border-color: transparent;
+    background: $appMedLtGrey;
+    padding: 1px;
+    padding: 0;
+    margin: 0 5px;
+    border: 0;
+    md-tabs.arrow-steps[md-border-bottom] > md-tabs-wrapper {      border-color: transparent;
+    background: $appMedLtGrey;
+    /* padding: 1px; */
+    padding: 0;
+    border: 0;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);  }
+    padding: 0;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+}
+md-tabs.arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-ink-bar {
+    display: none;
+}
+
+.arrow-steps .step {
+  font-size: 11.5px;
+  font-size: 14.5px;
+  text-align: center;
+  color: $appBlue;
+  cursor: default;
+  margin: 0 2px 0 0;
+  padding: 10px 10px 10px 30px;
+  width: calc(25% - 6px);
+  float: left;
+  position: relative;
+  background-color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color 0.2s ease;
+  overflow: visible;
+}
+ md-tabs.arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item {
+  font-size: 11.5px;
+  font-size: 14.5px;
+  text-align: center;
+  color: $appBlue;
+  cursor: pointer;
+  margin: 0px 0px 0 0;
+  padding: 10px 10px 10px 30px;
+  min-width: 25%;
+  width: 25%;
+  float: left;
+  position: relative;
+  background-color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color 0.2s ease;
+  overflow: visible;
+}
+ md-tabs.arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:hover {background-color:$appBlue; color:white;}
+  md-tabs.arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:hover:after {border-left-color:$appBlue;}
+
+.arrow-steps .step:after,
+.arrow-steps .step:before,
+.arrow-steps md-tab-item:after,
+.arrow-steps md-tab-item:before
+ {
+	content: " ";
+	position: absolute;
+	top: -2px;
+	right: -17px;
+	width: 0;
+	height: 0;
+	border-top: 22.5px solid transparent;
+	border-bottom: 21.5px solid transparent;
+	border-left: 19px solid white;
+	z-index: 2;
+	transition: border-color 0.2s ease;
+}
+.arrow-steps .step:last-child:after {color: transparent;}
+.arrow-steps .step:before, .arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:before {
+	right: auto;
+	left: 0px;
+	border-left: 19px solid $appMedLtGrey;
+	z-index: 0;
+}
+.arrow-steps .step:before, .arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item.md-active:before {
+    border-left: 17px solid $appBlue;
+}
+
+.arrow-steps .step:first-child:before, .arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:first-child:before {
+	border: none;
+}
+
+.arrow-steps .step:first-child, .arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:first-child {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.arrow-steps .step span, .arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item span {
+	position: relative;
+}
+.arrow-steps .step span, .arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item span.tabNumber {
+	background-color: $appMedLtGrey;
+	color: $appBlue;
+	padding: 3px 9px;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	position:absolute;
+	left: 27px;
+	top: 6px;
+}
+.arrow-steps .step span, .arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item.md-active span.tabNumber,
+md-tabs.arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:hover span.tabNumber
+ {background-color: white;}
+.arrow-steps .step span:before, .arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item span:before {
+	opacity: 0;
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -20px;
+}
+
+.arrow-steps .step.done span:before, .arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item.done span:before {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s ease 0.5s;
+	-moz-transition: opacity 0.3s ease 0.5s;
+	-ms-transition: opacity 0.3s ease 0.5s;
+	transition: opacity 0.3s ease 0.5s;
+}
+
+.arrow-steps .step.current, .arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item.current,
+.arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item.md-active {
+	color: white;
+	background-color: $appBlue;
+}
+
+.arrow-steps .step.current:after, .arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item.current:after,
+.arrow-steps > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item.md-active:after {
+	border-left: 19px solid $appBlue;
+}
+
+
+
+/******************* FIND EXPERT MODAL - EXPERT DETAILS ***************/
+.expertDetailsModal-leftColumn {font-size: 13px;}
+.expertDetailsModal-leftColumn label {font-size: 15px; margin-bottom:0;}
+.expertDetailsModal-profileImg-wrapper {position:relative;/* background: $appBlue; */}
+.expertDetailsModal-profileImg-wrapper img {width:100%;margin-bottom:7px;/* border-radius: 50%; */}
+.expertDetailsModal-profileImg-wrapper > div {font-size:16px;position:absolute;bottom: 7px;left: 0px;color:white;width: 100%;background: transparent;padding-left: 3px;}
+/********************** EXPERT DETAILS PAGE *****************/
+#expertDetails {}
+#expertDetails .row {margin:0;}
+#expertDetails .custom-dashInner > div {padding:15px;}
+#expertDetails md-tabs.md-dynamic-height md-tab-content.md-active {
+    min-height: 300px;
+}
+/********************** DASH POST a PROJECT*****************/
+
+
+  /*
+   * Off Canvas
+   * --------------------------------------------------
+   */
+   /* @media screen and (max-width: 767px) { */
+   .custom-visible-md {display: none;}
+  @media screen and (max-width: 1024px) {
+    .custom-visible-md {display: block!important;}
+    .row-offcanvas {
+      position: relative;
+      -webkit-transition: all .25s ease-out;
+           -o-transition: all .25s ease-out;
+              transition: all .25s ease-out;
+    }
+
+    .row-offcanvas-right {right: 0;}
+    .row-offcanvas-left {left: 0;}
+    .row-offcanvas-right
+    .sidebar-offcanvas {right: -60%; }
+    .row-offcanvas-left
+    .sidebar-offcanvas {left: -60%; }
+    .row-offcanvas-right.active {right: 60%; }
+    .row-offcanvas-left.active {left: 62%; left: calc(60% + 19px);}
+    .sidebar-offcanvas {position: absolute;top: 0;width: 60%; }
+    .custom-dashWrapper, .custom-dashInner {padding-top:0;}
+  }
+
+//IS THIS USED????
+  .my-custom-stars .button .material-icons {font-size: 50px;}
+  .my-custom-stars .star-button.star-on .material-icons {color: #003399;}
+  .my-custom-stars .star-button.star-off .material-icons {color: #99ccff;}
+
+/* DASH - DETAILS SHORTLIST */
+.custom-slEIProjectType md-radio-button {display:inline-block; font-size:16px; margin-bottom: 0; margin-right: 15px;}
+
+/****************** DASH - DETAILS - QUOTES RECEIVED *************/
+.custom-detailWrapper md-content.md-default-theme, md-content {background: transparent;}
+
+
+.custom-quotesReceivedWrapper {padding: 10px; margin: auto; background: white;}
+.custom-quotesReceivedList {}
+.custom-quotesReceivedList {}
+.custom-quotesReceivedList li {display:flex;align-items: center;justify-content: space-between;padding: 5px 12px;background: white;border: 1px solid $appMedLtGrey;margin-bottom: 5px;transition:0.4s;}
+.custom-quotesReceivedList li:hover {border-color:$appBlue; transform: scale(1.01) translate(0);}
+.custom-quotesReceivedList li > div {display:flex; align-items:center;}
+.custom-quotesReceivedList img {height: 50px;width: 50px;border-radius: 30px;margin-right: 15px;}
+.custom-quotesReceivedList button {margin-left: 15px;width: 150px;}
+.custom-quotesReceivedList .custom-labelWrapper {min-width:160px;}
+.custom-quotesReceivedList .custom-labelWrapper label {width: 100%;text-align: center;border-radius: 3px;padding: 7px 18px 7px;margin: 0;}
+.custom-engagementTitle {max-width:470px; margin-right:10px;}
+.custom-quoteReceivedLIInfo {flex-grow: 1;color: $appBlue; min-width:250px;}
+.custom-quotesReceivedList h4, .custom-quotesReceivedList h5 {margin:0;}
+.custom-quotesReceivedList h5 {font-size:16px;}
+.custom-approvedText {color: #69d2ff}
+.custom-invoiceAuthorizationRadioGroup md-radio-button .md-container{top:10px;}
+.custom-invoiceAuthorizationInputGroup md-input-container {width:100%;}
+@media screen and (max-width: 480px) {
+ .custom-quotesReceivedList li {display: block; text-align: center;}
+ .custom-quotesReceivedList li button {margin:0;}
+}
+// #custom-ecommerceWrapper .custom-ecommerceWrapper {}
+/******************* My Profile **************/
+.myProfileForm {padding: 15px;background-color: $appBorderGrey;margin-top: 30px;}
+.custom-upload {background: transparent;height: 154px;width: 154px;height: 150px;width: 150px;padding: 0;margin: 0;border: 2px solid $appBlue;display: table-cell;vertical-align: middle;text-align: center;}
+.custom-upload img {width:150px; max-height:150px;}
+  .profilePhotoWrapper {position: relative;}
+.profilePhotoUploadWrapper {width:150px; height:150px; background:$appBlue; }
+.uploadImgHover {}
+.uploadImgInstruction {display:none;position: absolute;z-index: 10;top: 45px;left: 17px;left: 50px;top: 50px;padding: 5px;height: 52px;height: 36px;text-align: center;background: transparent;color: white;}
+.uploadImgInstruction i {font-size: 16px;font-weight: 600;}
+.uploadImgInstruction div {font-size:12px}
+.uploadImgInstructionConsultant {display: none;position: absolute;z-index: 10;left: 44px;top: 73px;padding: 5px;height: 36px;text-align: center;background: transparent;color: white;}
+.uploadImgInstructionConsultant i {font-size: 16px;font-weight: 600;}
+.uploadImgInstructionConsultant div {font-size:15px;}
+.uploadImgInstruction .fa, .uploadImgInstructionConsultant .fa {font-size: 28px;}
+.uploadImgHover:hover #profilePhoto, .uploadImgHover:hover #consultantProfilePic {background-color: #333333a8;}
+.uploadImgHover:hover .uploadImgInstruction, .uploadImgHover:hover .uploadImgInstructionConsultant {display:block;}
+#profilePhoto {background: transparent;width: 152px;height: 150px;position: absolute;top: 0;cursor:pointer;}
+.custom-ProfileButtons, .custom-ProfileButtons-add {padding:15px; display:flex; justify-content: flex-end;}
+.custom-ProfileButtons button, .custom-ProfileButtons-add button {margin-left:15px;}
+.custom-cropperInstructions {font-weight:500;font-size: 16px;color: white;padding: 5px;border: 1px solid;background: #2f7492;}
+.custom-selectLimitSize {max-width: 300px;width: 100%;}
+@media screen and (max-width: 768px) {
+  .custom-selectLimitSize {max-width: 100%;}
+  .myProfileForm {margin-top:0;}
+  .custom-dashWrapper h1 {margin:0;padding: 15px;text-align: center;}
+  .profilePhotoWrapper {display: flex;flex-direction: column;align-items: center;}
+  .custom-ProfileButtons, .custom-ProfileButtons-add {justify-content: center;}
+  .custom-ProfileButtons button, .custom-ProfileButtons-add button  {width: 45%; margin: auto;}
+  .profilePhotoWrapper button {width: 150px;padding: 6px 9px;font-size: 13px;line-height: 1.5;border-radius: 3px;}
+}
+option {max-width:100%;width: 200px;}
+
+/******************* Company Profile Dialog **************/
+.custom-addInputField input {width: calc(100% - 30px);margin-right: 30px;}
+.custom-addInputField i.fa-minus-circle {font-size: 20px; color:$appOrange;}
+.custom-addInputField i.fa-plus-circle {font-size: 20px; color:#2f7492;}
+.custom-businessTypeList, .custom-securityClearance, .custom-contractList, .custom-naicsCode, .custom-certifications {margin-left:4px;}
+.custom-businessTypeList i.fa-minus-circle,
+.custom-companyProfileForm i.fa-minus-circle,
+.custom-companyProfileForm i.fa-times-circle,
+.custom-companyProfileForm i.fa-times-circle-o {font-size: 20px;color:$appOrange;color: $appBlue;margin-left:5px;}
+.custom-companyProfileForm {}
+.custom-companyProfileForm .custom-dashInner {padding-top: 25px;}
+.custom-companyProfileForm md-tabs {
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+.md-select-value {}
+.custom-companyProfileForm .col md-input-container {width:100%;}
+.custom-companyProfileForm .custom-businessTypeList label,
+.custom-companyProfileForm .custom-contractList label,
+.custom-companyProfileForm .custom-securityClearance label,
+.custom-companyProfileForm .custom-naicsCode label,
+ .custom-companyProfileForm .custom-certifications label {color: $appBlue;}
+.custom-companyProfileForm .custom-businessTypeList li {}
+.custom-greyLogo {color:$appGrey;}
+
+/* 2.9.18 */
+#custom-companyProfile {}
+#custom-companyProfile .panel-heading {display: flex; justify-content: space-between;}
+#custom-editCompanyProfile {}
+
+  .custom-allowTexts {margin: 18px 0; line-height: 34px;}
+  .custom-allowTexts label {font-weight:700;color: rgba(0,0,0,0.38);color: $appBlue;}
+
+
+#companyProfileSections .col {padding:10px;}
+
+form[name="companyInfoForm2"] md-input-container .md-errors-spacer {
+    float: right;
+    min-height: 24px;
+    min-width: 1px;
+    display: none;
+}
+
+/*************************** COMPANY PROFILE - DISPLAY *******************************/
+/*************************** Sections ***************************/
+.custom-companyProfile-header {min-height:250px; padding:10px;}
+.custom-companyProfile-addtlInfo {background: white; border-top:2px solid #555; padding:10px;}
+.custom-companyProfile-accoutUsers {background: white; overflow:hidden;padding:0px;}
+.custom-companyProfile-accoutUsers ul {overflow:hidden;}
+.custom-companyProfile-accoutUsers ul li {overflow:hidden;padding: 4px;font-size: 12px;}
+.custom-companyProfile-accoutUsers ul li:nth-child(even) {background: white;}
+.custom-companyProfileFlexHeader {display: flex; justify-content: space-between; align-items: center;}
+#companyProfileSections {padding:15px;}
+.custom-companyHeaderData ul li {font-size:12px;}
+.custom-companyHeaderData ul li .custom-companyListLabel {font-weight: bold; text-align: right; margin-right:10px; width:130px;}
+.custom-companyHeaderData .custom-addtlInfoTitle {font-weight: bold;font-size: 16px;color: $appBlue;}
+.custom-planInformation .custom-addtlInfoTitle {color: $appBlue; font-size: 16px; margin-right:7px;}
+.custom-planInformation ul li {display:flex;justify-content: space-between;}
+.custom-snapshotTop {background: white;padding: 10px;margin-bottom: 15px;}
+.custom-dashWrapper .list-group-item.custom-addtlInfoTitle {font-weight:bold;font-size:16px;border-top: 0;border: 0;padding-top: 0;}
+.custom-addtlInfoTitle {font-weight:bold; font-size:16px;}
+.custom-companyProfile-accoutUsers .custom-listItemTable {padding:0;text-overflow: ellipsis;overflow: hidden;}
+
+
+/****************************************** INVITED AUTH PAYER *****************************************/
+
+/******************* IAP Sign In ************************/
+/******************* IAP Quote Details ******************/
+#invitedAuthPayerEngagementQuoteDetails .custom-projectInfo img {width: 60px;height: 60px;border-radius: 30px;}
+#rateConsultant {}
+#rateConsultant md-dialog-actions button {margin-left:10px;}
+.custom-rateExpertInputs {
+    /* padding: 5px; */
+}
+.custom-rateExpertInputs li {display: flex; align-items: center; padding:10px;}
+.custom-rateExpertInputs li.list-group-item {padding: 2px 10px;width: 100%;border: 0;line-height: 45px;}
+.custom-rateExpertInputs li.list-group-item:hover {background: transparent;}
+.custom-rateExpertInputs li .rating-container {margin-left:25px;display: flex;align-items: center;line-height: 30px;}
+.custom-rateExpertInputs li .custom-ratingLabel {width:125px; text-align: right;}
+.custom-rateExpertInputs li .rating-container .caption {margin-top:0;}
+.custom-rateExpertInputs textarea {width:100%; max-width: 600px; padding:10px;}
+.custom-checkboxRatingLabel {margin-left:20px;}
+
+@media screen and (max-width:500px) {
+  .custom-rateExpertInputs li {display:list-item;}
+}
+
+
+/******************************** Ecommerce Overrides ******************************/
+.custom-dashWrapper .custom-dashInner #abMyAccountWrapper {
+    border-top: 1px solid transparent;
+    padding: 20px 0 20px 0;
+}
+
+form[name="companyInfoForm2"] {}
+form[name="companyInfoForm2"] .row {padding: 10px 0;margin: 0;display: flex;}
+form[name="companyInfoForm2"] .row.custom-odd {}
+.custom-formQuad {border-right:1px solid $appMedLtGrey;}
+
+/********************* UPGRADE PLANS **************/
+#upgradePlan {}
+#upgradePlan  .divTableBody {justify-content: space-around;}
+
+/************* ADDED 4.12.18 *****************/
+.custom-sortFilterList {}
+  .custom-sortFilterList li {text-indent:4px; font-size:13px;}
+.custom-sortFilterList li:hover {background: $appBorderGrey;color: $appDkGrey;}
+.custom-selectedFilter {color: white;background: $appBlue;}
+
+.custom-addBorder {border: 1px solid $appBlue; margin-bottom: 20px;}
+
+
+.custom-totalLineDivider {border-top: 1px dashed #bfbfbf;
+    margin-top: 7px;}
+.custom-rated {transition: .5s;}
+.custom-rated h5 {color: $appBlue;}
+.custom-rated:hover {transform: scale(1.05);}
+.custom-rated:hover h5 {color: $appBlue;}
